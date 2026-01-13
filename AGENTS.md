@@ -7,6 +7,7 @@
 - **Language:** TypeScript (strict mode enabled)
 - **Styling:** Tailwind CSS
 - **State Management:** TanStack Query
+- **UI Components:** shadcn/ui
 - **Linting/Formatting:** Biome
 - **Testing:** Playwright (Chromium only)
 
@@ -19,6 +20,17 @@
 - `bun run typecheck` - Run TypeScript type checking
 - `bun run test` - Run Playwright tests
 - `bun run test:ui` - Run Playwright tests with UI
+
+## Import Alias
+
+The project uses `@/*` as an import alias pointing to `./src/*`. This is configured in:
+- `tsconfig.json` - TypeScript path mapping
+- `vite.config.ts` - Vite resolve alias
+
+Example:
+```tsx
+import { Button } from '@/components/ui/button';
+```
 
 ## Code Style (Biome Configuration)
 
@@ -74,6 +86,19 @@ Example: `feat(auth): add login form component`
 - Use Tailwind CSS for styling
 - Follow feature-based structure
 - Keep components focused and reusable
+
+## shadcn/ui Guidelines
+
+- UI components are located in `src/components/ui/`
+- Use `bunx --bun shadcn@latest add <component>` to add new components
+- Refer to shadcn/ui documentation for component examples
+- Components use the `@/components/ui/` import path
+- Customize components by copying and modifying in the project
+
+Example:
+```bash
+bunx --bun shadcn@latest add button card
+```
 
 ## Testing (Playwright)
 
