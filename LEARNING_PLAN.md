@@ -124,35 +124,117 @@
 
 ---
 
-### Week 7-8: Tailwind CSS
+### Week 7: Tailwind CSS Fundamentals
 **Status**: ⬜ Not Started
 
 **Learning Goals**:
 - Understand Tailwind utility classes
 - Apply styles without custom CSS
 - Use Tailwind's responsive design
+- Configure Matrix theme colors
 
 **Tasks**:
-- [ ] Week 7: Tailwind Basics
+- [ ] Day 1-2: Tailwind Basics
   - [ ] Learn utility-first approach
   - [ ] Master common utilities (colors, spacing, typography)
-  - [ ] Install Tailwind in Vite project
-  - [ ] Replace custom CSS with Tailwind utilities
-  - [ ] Style header and buttons with Tailwind
-  
-- [ ] Week 8: Tailwind Advanced
-  - [ ] Learn hover and focus states
-  - [ ] Understand transitions
-  - [ ] Master grid and flexbox utilities
-  - [ ] Configure Matrix theme colors in Tailwind
-  - [ ] Migrate all custom CSS to Tailwind
-  - [ ] Create responsive grids
+  - [ ] Practice with simple component styling
+  - [ ] Understand Tailwind config file
+
+- [ ] Day 3-4: Tailwind Layout & Responsive
+  - [ ] Learn flexbox utilities (flex, justify, items)
+  - [ ] Learn grid utilities (grid, cols, gap)
+  - [ ] Understand responsive design (sm:, md:, lg:)
+  - [ ] Create responsive card layouts
+
+- [ ] Day 5: Tailwind Configuration
+  - [ ] Configure Matrix theme colors in tailwind config
+  - [ ] Add custom utilities if needed
+  - [ ] Review Vite + Tailwind setup
 
 **Deliverables**:
-- [ ] Complete portfolio styled with Tailwind
-- [ ] Matrix theme configured in Tailwind
-- [ ] Responsive design working
-- [ ] No custom CSS (except animations)
+- [ ] Styled components using Tailwind utilities
+- [ ] Matrix theme colors configured
+- [ ] Understanding of Tailwind utility system
+
+**Notes**:
+- 
+- 
+
+---
+
+### Week 8: shadcn/ui Integration & Customization
+**Status**: ⬜ Not Started
+
+**Learning Goals**:
+- Install and configure shadcn/ui
+- Learn how to use pre-built components
+- Customize shadcn components with Matrix theme
+- Migrate custom components to shadcn where possible
+
+**Tasks**:
+- [ ] Day 1: shadcn/ui Setup
+  - [ ] Install shadcn/ui CLI
+  - [ ] Initialize project configuration
+  - [ ] Configure to work with existing Tailwind setup
+  - [ ] Add first component: button
+  - [ ] Test button renders correctly
+
+- [ ] Day 2: Customize & Migrate Button
+  - [ ] Learn shadcn Button component structure
+  - [ ] Understand component variants system (CVA)
+  - [ ] Customize Button with Matrix theme colors
+  - [ ] Replace all custom Button components with shadcn Button
+  - [ ] Test all buttons across pages
+
+- [ ] Day 3: Card Component & Migration
+  - [ ] Add card component from shadcn
+  - [ ] Learn card sub-components (CardHeader, CardTitle, etc.)
+  - [ ] Customize Card styles (borders, colors, background)
+  - [ ] Replace TerminalBlock with shadcn Card
+  - [ ] Test in multiple components
+
+- [ ] Day 4: Form Components (Input, Textarea)
+  - [ ] Add input component
+  - [ ] Add textarea component
+  - [ ] Customize for Matrix theme (borders, colors)
+  - [ ] Build contact form using shadcn components
+  - [ ] Test form validation
+
+- [ ] Day 5: Sheet Component & Header Migration
+  - [ ] Add sheet component from shadcn
+  - [ ] Learn Sheet customization and props (position, size)
+  - [ ] Integrate Sheet into Header for mobile menu
+  - [ ] Keep Header navigation logic, replace mobile menu UI with Sheet
+  - [ ] Test responsive behavior (mobile vs desktop)
+  - [ ] Final testing of all shadcn components
+
+**Deliverables**:
+- [ ] shadcn/ui fully configured in project
+- [ ] Button, Card, Input, Textarea, Sheet components added
+- [ ] All components migrated (or partially migrated) to shadcn
+- [ ] Understanding of component customization (variants, props, styling)
+- [ ] Custom Matrix theme applied to shadcn components
+
+**Learning Outcomes**:
+- [ ] Install and configure shadcn/ui in any project
+- [ ] Add and use pre-built shadcn components
+- [ ] Customize shadcn components with custom themes
+- [ ] Compose shadcn components together
+- [ ] Understand component variants system (CVA)
+- [ ] Use Radix UI patterns (Sheet, Dialog, etc.)
+
+**shadcn Installation Commands**:
+```bash
+# Initial setup
+bunx --bun shadcn@latest init
+
+# Add components (Week 8, Day 1-5)
+bunx --bun shadcn@latest add button
+bunx --bun shadcn@latest add card
+bunx --bun shadcn@latest add input
+bunx --bun shadcn@latest add textarea
+bunx --bun shadcn@latest add sheet
+```
 
 **Notes**:
 - 
