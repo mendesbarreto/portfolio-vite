@@ -4,7 +4,24 @@
 - **Experience Level**: Backend Developer
 - **Learning Style**: Project-Based + Read & Practice
 - **Timeline**: 8-12 weeks (30-60 min/day)
-- **Goal**: Migrate Next.js portfolio to Vite + React + Tailwind + TanStack Query
+- **Goal**: Migrate Next.js portfolio to Vite + React + Tailwind + shadcn/ui + TanStack Query
+
+## 🎯 Learning Approach
+
+### **Build From Scratch, Then Migrate to shadcn/ui**
+1. **Week 5-6**: Build all components from scratch (learn fundamentals)
+2. **Week 7**: Learn Tailwind CSS utility classes
+3. **Week 8**: Migrate components to shadcn/ui where possible
+
+### **Component Strategy**
+- **Use shadcn/ui**: Button, Card, Input, Textarea, Sheet (mobile menu)
+- **Keep custom**: Header (navigation logic), TypingText (animation), TerminalHeader (custom styling)
+
+### **Why This Approach?**
+- Learn fundamentals by building from scratch
+- Accelerate development with pre-built components
+- Understand component customization (variants, styling, props)
+- Mix of custom + shadcn (real-world workflow)
 
 ## 🎯 Current Status
 - **Started**: January 12, 2026
@@ -329,6 +346,12 @@ bunx --bun shadcn@latest add sheet
 - [Tailwind Docs](https://tailwindcss.com/docs)
 - [Tailwind Cheat Sheet](https://tailwindcomponents.com/cheatsheet/)
 
+### shadcn/ui
+- [shadcn/ui Docs](https://ui.shadcn.com/) - Component library documentation
+- [Radix UI Primitives](https://www.radix-ui.com/primitives) - Underlying component library
+- [class-variance-authority (CVA)](https://cva.style/) - Component variants system
+- [shadcn/ui Components](https://ui.shadcn.com/docs/components) - All available components
+
 ### TanStack Query
 - [TanStack Query Docs](https://tanstack.com/query/latest)
 
@@ -336,25 +359,54 @@ bunx --bun shadcn@latest add sheet
 
 ## 🎯 Component Migration Checklist
 
-| Component | Source | Destination | Status |
-|-----------|--------|-------------|---------|
-| Global Styles | `portfolio-nextjs/src/app/globals.css` | `portfolio-vite/src/index.css` | ⬜ |
-| Button | `portfolio-nextjs/src/components/common/base-button.tsx` | `portfolio-vite/src/components/common/base-button.tsx` | ⬜ |
-| Terminal Block | `portfolio-nextjs/src/components/common/terminal-block.tsx` | `portfolio-vite/src/components/common/terminal-block.tsx` | ⬜ |
-| Terminal Header | `portfolio-nextjs/src/components/common/terminal-header.tsx` | `portfolio-vite/src/components/common/terminal-header.tsx` | ⬜ |
-| Header | `portfolio-nextjs/src/components/common/header.tsx` | `portfolio-vite/src/components/common/header.tsx` | ⬜ |
-| Typing Text | `portfolio-nextjs/src/components/common/typing-text.tsx` | `portfolio-vite/src/components/common/typing-text.tsx` | ⬜ |
-| Code Block | `portfolio-nextjs/src/components/common/code-block.tsx` | `portfolio-vite/src/components/common/code-block.tsx` | ⬜ |
-| Overlay Box | `portfolio-nextjs/src/components/common/overlay-box.tsx` | `portfolio-vite/src/components/common/overlay-box.tsx` | ⬜ |
-| Home Summary | `portfolio-nextjs/src/components/home/home-summary.tsx` | `portfolio-vite/src/features/home/components/home-summary.tsx` | ⬜ |
-| Highlights | `portfolio-nextjs/src/components/home/highlights.tsx` | `portfolio-vite/src/features/home/components/highlights.tsx` | ⬜ |
-| Project List | `portfolio-nextjs/src/components/projects/project-list.tsx` | `portfolio-vite/src/features/home/components/project-list.tsx` | ⬜ |
-| Professional Summary | `portfolio-nextjs/src/components/about/professional-summary.tsx` | `portfolio-vite/src/features/about/components/professional-summary.tsx` | ⬜ |
-| Experience | `portfolio-nextjs/src/components/about/experience.tsx` | `portfolio-vite/src/features/about/components/experience.tsx` | ⬜ |
-| Education | `portfolio-nextjs/src/components/about/education.tsx` | `portfolio-vite/src/features/about/components/education.tsx` | ⬜ |
-| Tech Skills | `portfolio-nextjs/src/components/about/tech-skills.tsx` | `portfolio-vite/src/features/about/components/tech-skills.tsx` | ⬜ |
-| Management Skills | `portfolio-nextjs/src/components/about/management-skills.tsx` | `portfolio-vite/src/features/about/components/management-skills.tsx` | ⬜ |
-| Contact Info | `portfolio-nextjs/src/components/contacts/contact-info.tsx` | `portfolio-vite/src/features/contacts/components/contact-info.tsx` | ⬜ |
+### Week 5-6: Build From Scratch (Learn Fundamentals)
+
+| Component | Destination | Week | Status |
+|-----------|-------------|-------|---------|
+| Button | `src/components/common/base-button.tsx` | 5-6 | ⬜ |
+| Terminal Block | `src/components/common/terminal-block.tsx` | 5-6 | ⬜ |
+| Terminal Header | `src/components/common/terminal-header.tsx` | 5-6 | ⬜ |
+| Header | `src/components/common/header.tsx` | 5-6 | ⬜ |
+| Typing Text | `src/components/common/typing-text.tsx` | 5-6 | ⬜ |
+| Code Block | `src/components/common/code-block.tsx` | 5-6 | ⬜ |
+| Overlay Box | `src/components/common/overlay-box.tsx` | 5-6 | ⬜ |
+| Home Summary | `src/features/home/components/home-summary.tsx` | 5-6 | ⬜ |
+| Highlights | `src/features/home/components/highlights.tsx` | 5-6 | ⬜ |
+| Project List | `src/features/home/components/project-list.tsx` | 5-6 | ⬜ |
+| Professional Summary | `src/features/about/components/professional-summary.tsx` | 5-6 | ⬜ |
+| Experience | `src/features/about/components/experience.tsx` | 5-6 | ⬜ |
+| Education | `src/features/about/components/education.tsx` | 5-6 | ⬜ |
+| Tech Skills | `src/features/about/components/tech-skills.tsx` | 5-6 | ⬜ |
+| Management Skills | `src/features/about/components/management-skills.tsx` | 5-6 | ⬜ |
+| Contact Info | `src/features/contacts/components/contact-info.tsx` | 5-6 | ⬜ |
+
+### Week 8: Migrate to shadcn/ui
+
+| Component | shadcn Component | Day | Status |
+|-----------|------------------|------|---------|
+| Button | `@/components/ui/button` | 2 | ⬜ |
+| Terminal Block | `@/components/ui/card` | 3 | ⬜ |
+| Contact Form Input | `@/components/ui/input` | 4 | ⬜ |
+| Contact Form Textarea | `@/components/ui/textarea` | 4 | ⬜ |
+| Header (Mobile Menu) | `@/components/ui/sheet` | 5 | ⬜ |
+
+### Components to Keep Custom
+
+| Component | Reason | Status |
+|-----------|---------|---------|
+| Header | Complex navigation logic with mobile menu state | ⬜ |
+| Typing Text | Custom animation, specific to design | ⬜ |
+| Terminal Header | Custom styled header for cards | ⬜ |
+| Code Block | Custom styling for code display | ⬜ |
+
+### Global Assets Migration
+
+| Asset | Source | Destination | Status |
+|--------|--------|-------------|---------|
+| Global Styles | `portfolio-nextjs/src/app/globals.css` | `src/index.css` | ⬜ |
+| Profile Image | `portfolio-nextjs/public/img-profile.png` | `public/img-profile.png` | ⬜ |
+| Favicon | `portfolio-nextjs/public/favicon.ico` | `public/favicon.ico` | ⬜ |
+| Icons | `portfolio-nextjs/public/icons/` | `public/icons/` | ⬜ |
 
 ---
 
@@ -381,13 +433,15 @@ bunx --bun shadcn@latest add sheet
 **Project is complete when:**
 - [ ] All components migrated from Next.js to Vite
 - [ ] Matrix theme fully implemented in Tailwind
+- [ ] shadcn/ui components integrated and customized
 - [ ] Routing working for all pages (Home, About, Contacts)
 - [ ] All data managed by TanStack Query
-- [ ] Contact form functional with mutation
+- [ ] Contact form functional with mutation (shadcn Input + Textarea)
 - [ ] TypeScript type checking passes
 - [ ] Build succeeds without errors
 - [ ] All pages responsive and styled
 - [ ] Animations working (typing, cursor blink, scanlines)
+- [ ] Mix of custom components + shadcn/ui components working together
 
 ---
 
@@ -403,4 +457,4 @@ bunx --bun shadcn@latest add sheet
 
 ---
 
-*Last Updated: January 12, 2026*
+*Last Updated: January 17, 2026*
