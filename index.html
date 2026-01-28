@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Douglas Mendes - Portfolio</title>
   </head>
   <body>
@@ -18,10 +18,11 @@
       </nav>
     </header>
     <main>
+      <section>
+        <h2>My Projects</h2>
+        <p>...</p>
+      </section>
 
-      <h2>My Projects</h2>
-      <p>...</p>
-      
       <section>
         <h2>About me</h2>
         <p>Senior Software Engineering Manager</p>
@@ -43,13 +44,39 @@
           <li>TS/JS</li>
         </ul>
       </section>
+      <section>
+        <h3>Register</h3>
+        <form class="flex flex-col gap-4 max-w-md">
+          <label for="name">Name:</label>
+          <input type="text" name="name" placeholder="Your name here">
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="Your email here">
+
+          <label for="password">Password:</label>
+          <input type="password" name="password" placeholder="Your pass">
+
+          <label for="agree">I agree to the terms and conditions</label>
+          <input type="checkbox" name="agree">
+
+          <label for="about">About you:</label>
+          <textarea id="about" name="about" placeholder="About you" />
+        </form>
+      </section>
     </main>
     <footer>
-      <p>&copy; 2024 Douglas Mendes</p>
+      <p>© 2025 Douglas Mendes</p>
       <ul>
-
-        <li><a href="https://linkedin.com/in/mendesbarreto" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/mendesbarreto" target="_blank">Github</a></li>
+        <li>
+          <a href="https://linkedin.com/in/mendesbarreto" target="_blank" rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/mendesbarreto" target="_blank" rel="noopener noreferrer"
+            >Github</a
+          >
+        </li>
       </ul>
     </footer>
   </body>

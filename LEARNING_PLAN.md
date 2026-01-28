@@ -1,6 +1,7 @@
 # Portfolio Migration Learning Plan
 
 ## 📋 Student Profile
+
 - **Experience Level**: Backend Developer
 - **Learning Style**: Project-Based + Read & Practice
 - **Timeline**: 8-12 weeks (30-60 min/day)
@@ -9,24 +10,28 @@
 ## 🎯 Learning Approach
 
 ### **Build From Scratch, Then Migrate to shadcn/ui**
+
 1. **Week 5-6**: Build all components from scratch (learn fundamentals)
 2. **Week 7**: Learn Tailwind CSS utility classes
 3. **Week 8**: Migrate components to shadcn/ui where possible
 
 ### **Component Strategy**
+
 - **Use shadcn/ui**: Button, Card, Input, Textarea, Sheet (mobile menu)
 - **Keep custom**: Header (navigation logic), TypingText (animation), TerminalHeader (custom styling)
 
 ### **Why This Approach?**
+
 - Learn fundamentals by building from scratch
 - Accelerate development with pre-built components
 - Understand component customization (variants, styling, props)
 - Mix of custom + shadcn (real-world workflow)
 
 ## 🎯 Current Status
+
 - **Started**: January 12, 2026
 - **Current Phase**: Not Started
-- **Projects**: 
+- **Projects**:
   - Source: `/Users/mendes/Git/personal/portfolio-nextjs`
   - Target: `/Users/mendes/Git/personal/portfolio-vite`
 
@@ -35,48 +40,74 @@
 ## 📅 Week-by-Week Progress
 
 ### Week 1-2: HTML Fundamentals
+
 **Status**: ⬜ Not Started
 
 **Learning Goals**:
+
 - Understand HTML document structure
 - Learn semantic HTML elements
 - Create basic page layouts
 
 **Tasks**:
-- [ ] Week 1: HTML Structure
-  - [ ] Create basic HTML document
-  - [ ] Learn essential tags (h1-h6, p, div, span, a, img)
-  - [ ] Create test.html with name and bio
-  - [ ] Add headings, paragraphs, and links
+
+- [x] Week 1: HTML Structure
+  - [x] Create basic HTML document
+  - [x] Learn essential tags (h1-h6, p, div, span, a, img)
+  - [x] Create test.html with name and bio
+  - [x] Add headings, paragraphs, and links
   
 - [ ] Week 2: Semantic HTML
-  - [ ] Learn semantic elements (header, nav, main, section, article, footer)
-  - [ ] Understand lists (ul, ol, li)
-  - [ ] Learn forms (form, input, button, textarea, label)
-  - [ ] Create portfolio structure with semantic tags
-  - [ ] Create index.html, about.html, contacts.html
+  - [x] Learn semantic elements (header, nav, main, section, article, footer)
+  - [x] Understand lists (ul, ol, li)
+  - [x] Learn forms (form, input, button, textarea, label)
+  - [x] Create portfolio structure with semantic tags
+  - [] Create index.html, about.html, contacts.html
 
 **Deliverables**:
-- [ ] `index.html` with complete portfolio structure (no styling)
+
+- [x] `index.html` with complete portfolio structure (no styling)
 - [ ] `about.html` with about section
 - [ ] `contacts.html` with contact form
 
-**Notes**:
-- 
-- 
+**Notes**
+
+**Week 2 Guidelines (for LLM continuity):**
+
+1. **Content Approach**: This is learning-only (not production). Use simple placeholder content:
+   - Experience: List 2-3 example job titles with dates
+   - Education: List 1-2 example degrees
+   - Skills: Simple lists of technologies/skills
+   - No need to pull from actual portfolio
+
+2. **File Structure**: Create two new files:
+   - `about.html` - Copy header/nav/footer from index.html, add semantic sections for professional summary, experience, education, skills
+   - `contacts.html` - Copy header/nav/footer from index.html, add contact information section and contact form
+
+3. **Learning Focus**:
+   - Practice repeating semantic structure across multiple pages
+   - Use `<section>` to group related content
+   - Build proper `<form>` with `<label>` and `<input>` pairs
+   - Practice `<ul>` and `<li>` for lists
+   - No styling needed yet (that's Week 3-4)
+
+4. **Code Duplication is Okay**: Header/footer will be repeated on all pages - this is intentional for learning. We'll refactor to components later in React phase.
 
 ---
 
 ### Week 3-4: CSS Fundamentals
+
 **Status**: ⬜ Not Started
 
 **Learning Goals**:
+
 - Understand CSS syntax and selectors
 - Learn box model
 - Style text, colors, backgrounds
 - Basic layout techniques
 
 **Tasks**:
+
 - [ ] Week 3: CSS Basics
   - [ ] Learn CSS syntax (selector, property, value)
   - [ ] Understand selectors (element, class, ID, descendant)
@@ -94,26 +125,31 @@
   - [ ] Add borders and rounded corners
 
 **Deliverables**:
+
 - [ ] Styled portfolio with styles.css
 - [ ] Responsive layout for header and sections
 - [ ] Basic color scheme applied
 
-**Notes**:
-- 
-- 
+**Notes**
+-
+
+-
 
 ---
 
 ### Week 5-6: React Fundamentals
+
 **Status**: ⬜ Not Started
 
 **Learning Goals**:
+
 - Understand React components
 - Learn JSX syntax
 - Manage component state with hooks
 - Handle user events
 
 **Tasks**:
+
 - [ ] Week 5: React Components
   - [ ] Learn component structure (function components)
   - [ ] Understand JSX syntax
@@ -130,27 +166,32 @@
   - [ ] Add state for expandable project cards
 
 **Deliverables**:
+
 - [ ] React portfolio with component structure
 - [ ] Header with mobile menu toggle
 - [ ] Expandable project cards
 - [ ] All sections as React components
 
-**Notes**:
-- 
-- 
+**Notes**
+-
+
+-
 
 ---
 
 ### Week 7: Tailwind CSS Fundamentals
+
 **Status**: ⬜ Not Started
 
 **Learning Goals**:
+
 - Understand Tailwind utility classes
 - Apply styles without custom CSS
 - Use Tailwind's responsive design
 - Configure Matrix theme colors
 
 **Tasks**:
+
 - [ ] Day 1-2: Tailwind Basics
   - [ ] Learn utility-first approach
   - [ ] Master common utilities (colors, spacing, typography)
@@ -169,26 +210,31 @@
   - [ ] Review Vite + Tailwind setup
 
 **Deliverables**:
+
 - [ ] Styled components using Tailwind utilities
 - [ ] Matrix theme colors configured
 - [ ] Understanding of Tailwind utility system
 
-**Notes**:
-- 
-- 
+**Notes**
+-
+
+-
 
 ---
 
 ### Week 8: shadcn/ui Integration & Customization
+
 **Status**: ⬜ Not Started
 
 **Learning Goals**:
+
 - Install and configure shadcn/ui
 - Learn how to use pre-built components
 - Customize shadcn components with Matrix theme
 - Migrate custom components to shadcn where possible
 
 **Tasks**:
+
 - [ ] Day 1: shadcn/ui Setup
   - [ ] Install shadcn/ui CLI
   - [ ] Initialize project configuration
@@ -226,6 +272,7 @@
   - [ ] Final testing of all shadcn components
 
 **Deliverables**:
+
 - [ ] shadcn/ui fully configured in project
 - [ ] Button, Card, Input, Textarea, Sheet components added
 - [ ] All components migrated (or partially migrated) to shadcn
@@ -233,6 +280,7 @@
 - [ ] Custom Matrix theme applied to shadcn components
 
 **Learning Outcomes**:
+
 - [ ] Install and configure shadcn/ui in any project
 - [ ] Add and use pre-built shadcn components
 - [ ] Customize shadcn components with custom themes
@@ -241,6 +289,7 @@
 - [ ] Use Radix UI patterns (Sheet, Dialog, etc.)
 
 **shadcn Installation Commands**:
+
 ```bash
 # Initial setup
 bunx --bun shadcn@latest init
@@ -253,22 +302,26 @@ bunx --bun shadcn@latest add textarea
 bunx --bun shadcn@latest add sheet
 ```
 
-**Notes**:
-- 
-- 
+**Notes**
+-
+
+-
 
 ---
 
 ### Week 9-10: Vite & Build Setup
+
 **Status**: ⬜ Not Started
 
 **Learning Goals**:
+
 - Understand Vite configuration
 - Set up project structure
 - Handle assets (images, icons)
 - Configure TypeScript
 
 **Tasks**:
+
 - [ ] Week 9: Vite Fundamentals
   - [ ] Understand Vite vs Next.js
   - [ ] Review project structure
@@ -283,27 +336,32 @@ bunx --bun shadcn@latest add sheet
   - [ ] Test navigation between pages
 
 **Deliverables**:
+
 - [ ] Vite project fully configured
 - [ ] Routing working for all pages
 - [ ] Assets (images, icons) properly loaded
 - [ ] TypeScript type checking passing
 
-**Notes**:
-- 
-- 
+**Notes**
+-
+
+-
 
 ---
 
 ### Week 11-12: TanStack Query Integration
+
 **Status**: ⬜ Not Started
 
 **Learning Goals**:
+
 - Fetch data with useQuery
 - Write data with useMutation
 - Handle loading/error states
 - Optimize queries
 
 **Tasks**:
+
 - [ ] Week 11: Data Fetching
   - [ ] Learn useQuery hook
   - [ ] Create service layer (getProjects, getAchievements, etc.)
@@ -319,40 +377,47 @@ bunx --bun shadcn@latest add sheet
   - [ ] Optimize query configuration (staleTime, prefetch)
 
 **Deliverables**:
+
 - [ ] Complete portfolio migrated to Vite + React + Tailwind + TanStack Query
 - [ ] All data fetched via TanStack Query
 - [ ] Contact form working with mutation
 - [ ] Optimized query configuration
 - [ ] Ready for production deployment
 
-**Notes**:
-- 
-- 
+**Notes**
+-
+
+-
 
 ---
 
 ## 📚 Learning Resources
 
 ### HTML/CSS
+
 - [MDN Web Docs](https://developer.mozilla.org/) - HTML and CSS reference
 - [CSS-Tricks](https://css-tricks.com/) - CSS tutorials
 - [Flexbox Froggy](https://flexboxfroggy.com/) - Interactive flexbox learning
 
 ### React
+
 - [React Official Docs](https://react.dev/)
 - [React Tutorial](https://react.dev/learn)
 
 ### Tailwind CSS
+
 - [Tailwind Docs](https://tailwindcss.com/docs)
 - [Tailwind Cheat Sheet](https://tailwindcomponents.com/cheatsheet/)
 
 ### shadcn/ui
+
 - [shadcn/ui Docs](https://ui.shadcn.com/) - Component library documentation
 - [Radix UI Primitives](https://www.radix-ui.com/primitives) - Underlying component library
 - [class-variance-authority (CVA)](https://cva.style/) - Component variants system
 - [shadcn/ui Components](https://ui.shadcn.com/docs/components) - All available components
 
 ### TanStack Query
+
 - [TanStack Query Docs](https://tanstack.com/query/latest)
 
 ---
@@ -413,24 +478,27 @@ bunx --bun shadcn@latest add sheet
 ## 📝 Daily Notes
 
 ### Week 1
-- [ ] Day 1: 
-- [ ] Day 2: 
-- [ ] Day 3: 
-- [ ] Day 4: 
-- [ ] Day 5: 
+
+- [ ] Day 1:
+- [ ] Day 2:
+- [ ] Day 3:
+- [ ] Day 4:
+- [ ] Day 5:
 
 ### Week 2
-- [ ] Day 1: 
-- [ ] Day 2: 
-- [ ] Day 3: 
-- [ ] Day 4: 
-- [ ] Day 5: 
+
+- [ ] Day 1:
+- [ ] Day 2:
+- [ ] Day 3:
+- [ ] Day 4:
+- [ ] Day 5:
 
 ---
 
 ## ✅ Completion Criteria
 
 **Project is complete when:**
+
 - [ ] All components migrated from Next.js to Vite
 - [ ] Matrix theme fully implemented in Tailwind
 - [ ] shadcn/ui components integrated and customized
@@ -458,3 +526,215 @@ bunx --bun shadcn@latest add sheet
 ---
 
 *Last Updated: January 17, 2026*
+
+---
+
+## 🎓 TEACHING GUIDE: Week 2 Tasks
+
+### Task 1: Creating `about.html`
+
+**Goal**: Practice semantic HTML by creating a "About" page with multiple sections and elements.
+
+**Steps**:
+
+1. **Copy the base structure** from `index.html`
+   - Copy everything from `<!DOCTYPE html>` to `</footer>`
+   - Update the `<title>` tag to say "About Me - Douglas Mendes"
+
+2. **Add Header** (already in index.html, keep it):
+   ```html
+   <header>
+     <h1>Douglas Mendes</h1>
+     <nav>
+       <ul>
+         <li><a href="/">Home</a></li>
+         <li><a href="/about">About</a></li>
+         <li><a href="/contact">Contact</a></li>
+       </ul>
+     </nav>
+   </header>
+   ```
+
+3. **Add Professional Summary Section**:
+   ```html
+   <section>
+     <h1>Professional Summary</h1>
+     <article>
+       <p>Your paragraph 1 content here...</p>
+       <p>Your paragraph 2 content here...</p>
+     </article>
+   </section>
+   ```
+   **Key elements to practice**:
+   - `<section>` for grouping related content
+   - `<h1>` for the section title
+   - `<article>` for self-contained content
+   - `<p>` for paragraphs
+
+4. **Add Professional Experience Section**:
+   ```html
+   <section>
+     <h1>Professional Experience</h1>
+     
+     <!-- Job 1 -->
+     <article>
+       <header>
+         <h2>Job Title - Company Name</h2>
+         <time datetime="2021-03-01">March 2021 - Present</time>
+       </header>
+       <dl>
+         <dt>Role/Responsibility 1</dt>
+         <dd>Description of what you did</dd>
+       </dl>
+     </article>
+   </section>
+   ```
+   **Key elements to practice**:
+   - Multiple `<article>` elements for separate jobs
+   - `<header>` inside article for job title and dates
+   - `<h2>` for job titles (secondary heading)
+   - `<time>` for dates with datetime attribute
+   - `<dl>` for definition lists (dt = term, dd = description)
+
+5. **Add Education Section** (similar pattern to experience)
+
+6. **Add Technical Skills Section**:
+   ```html
+   <section>
+     <h1>Technical Skills</h1>
+     <article>
+       <h2>Programming Languages</h2>
+       <ul>
+         <li>TypeScript</li>
+         <li>JavaScript</li>
+         <li>Python</li>
+       </ul>
+     </article>
+   </section>
+   ```
+   **Key elements to practice**:
+   - `<ul>` and `<li>` for lists
+   - Multiple articles with subheadings
+
+7. **Add Footer** (already in index.html, keep it)
+
+**What you'll learn**:
+- How to structure multiple pages with the same header/footer
+- How to use semantic elements together (section + article)
+- How to organize information hierarchically (h1 > h2)
+- How to use definition lists for job responsibilities
+- How to use lists for skills
+
+---
+
+### Task 2: Creating `contacts.html`
+
+**Goal**: Practice forms and contact information layout.
+
+**Steps**:
+
+1. **Copy the base structure** from `index.html`
+
+2. **Add Contact Information Section**:
+   ```html
+   <section>
+     <h1>Get in Touch</h1>
+     <article>
+       <h2>Contact Information</h2>
+       <ul>
+         <li><strong>Email:</strong> email@example.com</li>
+         <li><strong>Phone:</strong> +1 234 567 8900</li>
+       </ul>
+     </article>
+   </section>
+   ```
+
+3. **Add Contact Form Section**:
+   ```html
+   <section>
+     <h1>Send a Message</h1>
+     <form>
+       <div>
+         <label for="name">Name</label>
+         <input type="text" id="name" name="name" required>
+       </div>
+       
+       <div>
+         <label for="email">Email</label>
+         <input type="email" id="email" name="email" required>
+       </div>
+       
+       <div>
+         <label for="message">Message</label>
+         <textarea id="message" name="message" rows="5" required></textarea>
+       </div>
+       
+       <button type="submit">Send Message</button>
+     </form>
+   </section>
+   ```
+   **Key elements to practice**:
+   - `<form>` container for the entire form
+   - `<label>` paired with `<input>` using `for` and `id` attributes
+   - `<input>` with different types (text, email)
+   - `<textarea>` for multi-line text input
+   - `required` attribute for validation
+   - `<button>` for the submit action
+
+**What you'll learn**:
+- How to properly label form inputs (accessibility requirement)
+- How to create contact information sections
+- How to organize a contact form
+- Form validation with the `required` attribute
+- Proper form structure
+
+---
+
+### Common Patterns to Practice:
+
+1. **Repeated Header Structure**:
+   ```html
+   <header>
+     <h1>Douglas Mendes</h1>
+     <nav>
+       <ul>
+         <li><a href="/">Home</a></li>
+         <li><a href="/about">About</a></li>
+         <li><a href="/contact">Contact</a></li>
+       </ul>
+     </nav>
+   </header>
+   ```
+
+2. **Section + Article Pattern**:
+   ```html
+   <section>
+     <h1>Section Title</h1>
+     <article>
+       <h2>Subsection Title</h2>
+       <p>Content here...</p>
+     </article>
+   </section>
+   ```
+
+3. **Header + Content + Footer**:
+   Every page should have this structure.
+
+---
+
+### Success Checklist:
+
+After creating both files, verify you have:
+- [ ] Both files have the correct `<title>` tags
+- [ ] Both files have identical header structure
+- [ ] Both files have identical footer structure
+- [ ] All navigation links work (relative paths)
+- [ ] About page has multiple `<section>` elements
+- [ ] About page has `<article>` elements
+- [ ] About page uses `<dl>` for job details
+- [ ] About page uses `<ul>` and `<li>` for skills
+- [ ] Contact page has a properly labeled `<form>`
+- [ ] Contact page has `<label>` and `<input>` pairs
+- [ ] Contact page has a `<textarea>`
+- [ ] All sections have appropriate heading levels (h1, h2)
+
