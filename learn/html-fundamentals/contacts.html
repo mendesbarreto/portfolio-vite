@@ -14,11 +14,11 @@
         <h3>Register</h3>
         <form action="/submit" method="POST" class="flex flex-col gap-4 max-w-md">
           <label for="name">Name: </label>
-          <input type="text" name="name" placeholder="Enter your name">
+          <input id="name" type="text" name="name" placeholder="Enter your name">
           <label for="email">Email: </label>
-          <input type="email" name="email" placeholder="Enter you email">
+          <input id="email" type="email" name="email" placeholder="Enter you email">
           <label for="msg">Msg: </label>
-          <input type="text" name="msg" placeholder="Add new msg">
+          <input id="msg" type="textarea" name="msg" placeholder="Add new msg">
           <button type="submit">Submit</button>
           <button type="reset">Reset</button>
         </form>
