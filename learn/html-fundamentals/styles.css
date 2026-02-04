@@ -1,8 +1,134 @@
 :root {
   /* Colors - Matrix Theme */
-  --color-bg: #0a0a0a;
-  --color-text: #00ff00;
-  --color-link: #00ff41;
-  --color-link-hover: #003300;
-  --
+  --color-background: #050505;
+  --color-background-light: #0b1a20;
+  --color-background-lighter: #14282f;
+  --color-m-green: #008f11;
+  --color-m-yellow: #39ff14;
+  --color-m-teal: #00ffcc;
+  --color-m-gray: #e0e0e0;
+  --color-border: #00ff41;
+
+  /* Fonts and callbacks */
+  --font-fira-code: "Fira Code", "Courier New", Consolas, monospace;
+
+  /* All your spacing in ONE place*/
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-fira-code);
+  background-color: var(--color-background);
+  color: var(--color-m-gray);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ================================
+ * CSS Reset
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-color: var(--color-border);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-m-yellow);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+a {
+  color: var(--color-m-teal);
+  text-decoration: none;
+  transition:
+    color 0.2s ease,
+    text-shadow 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-m-yellow);
+  text-shadow: 0 0 10px var(--color-border);
+}
+
+a:focus {
+  outline: 2px solid var(--color-m-yellow);
+  outline-offset: 2px;
+}
+
+/* =================================== 
+ * Matrix Effects
+ * ================================== 
+*/
+.matrix-glow {
+  text-shadow:
+    0 0 10px #00ff41,
+    0 0 20px #00ff41,
+    0 0 30px #00ff41;
+}
+
+.border-glow {
+  box-shadow:
+    0 0 10px #00ff41,
+    0 0 20px #00ff41,
+    0 0 30px #00ff41;
+}
+
+.scanlines {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanlines::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(0, 255, 65, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+  background-size: 100% 4px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink {
+  animation: blink 1s infinite;
 }

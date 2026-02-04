@@ -107,18 +107,18 @@ Always consult source for accurate styling. Key file: `portfolio-nextjs/src/app/
 - Apply Matrix theme colors
 
 **Tasks**:
-- [ ] Learn CSS syntax (selector, property, value)
-- [ ] Understand selectors (element, class, ID, descendant)
-- [ ] Learn colors and text styling
-- [ ] Create styles.css file
-- [ ] Apply Matrix theme from source portfolio
-- [ ] Add CSS reset/normalize
-- [ ] Style index.html with base styles
+- [x] Learn CSS syntax (selector, property, value)
+- [x] Understand selectors (element, class, ID, descendant)
+- [x] Learn colors and text styling
+- [x] Create styles.css file
+- [x] Apply Matrix theme from source portfolio
+- [x] Add CSS reset/normalize
+- [x] Style index.html with base styles
 
 **Deliverables**:
 | File | Status |
 |------|--------|
-| `learn/html-fundamentals/styles.css` | ⬜ Not created |
+| `learn/html-fundamentals/styles.css` | ✅ Complete |
 
 **Best Practices to Learn**:
 | Practice | Why |
@@ -234,8 +234,16 @@ bunx --bun shadcn@latest add button card input textarea sheet
 - **Day 1**: Learned `for`/`id` relationship, form submission sends `name` not `id`
 - **Day 2**: Understood `<textarea>` is separate element, fixed in contacts.html
 
-### Week 3 (CSS Fundamentals)
-- **Day 1**: [Add notes here]
+ ### Week 3: CSS Fundamentals (CSS Basics, Box Model & Layout)
+- **Day 1**: Learned CSS variables in `:root`, how `var()` works, creating custom properties
+- **Day 2**: Learned universal selector `*`, CSS reset (`margin: 0`, `padding: 0`, `box-sizing: border-box`), and how `box-sizing: border-box` fixes width issues
+- **Day 3**: Learned HTML element `font-size: 16px` base for `rem` units, body base styles, line-height for accessibility
+- **Day 4**: Learned typography, link pseudo-classes (`:hover`, `:focus`), text-shadow for glow effects, matrix effects (scanlines, cursor blink animation)
+- **Day 5**: Implemented complete `styles.css` with Matrix theme from source portfolio, added Google Fonts and CSS link to `index.html`
+- **Day 2**: Learned universal selector `*`, CSS reset (`margin: 0`, `padding: 0`, `box-sizing: border-box`), and how `box-sizing: border-box` fixes width issues
+- **Day 3**: Learned HTML element `font-size: 16px` base for `rem` units, body base styles, line-height for accessibility
+- **Day 4**: Learned typography, link pseudo-classes (`:hover`, `:focus`), text-shadow for glow effects, matrix effects (scanlines, cursor blink animation)
+- **Day 5**: Implemented complete `styles.css` with Matrix theme from source portfolio, added Google Fonts and CSS link to `index.html`
 
 ---
 
