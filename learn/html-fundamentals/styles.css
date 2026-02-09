@@ -132,3 +132,18 @@ a:focus {
 .cursor-blink {
   animation: blink 1s infinite;
 }
+
+form {
+  padding: var(--spacing-lg);
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  margin-bottom: var(--spacing-xl);
+  width: 100%;
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+}

@@ -46,7 +46,7 @@ Always consult source for accurate styling. Key file: `portfolio-nextjs/src/app/
 | Phase | Weeks | Status | Progress |
 |-------|-------|--------|----------|
 | HTML Fundamentals | 1-2 | ✅ Complete | 100% |
-| CSS Fundamentals | 3-4 | 🟡 In Progress | 0% |
+| CSS Fundamentals | 3-4 | ✅ Complete | 100% |
 | React Fundamentals | 5-6 | ⬜ Not Started | 0% |
 | Tailwind CSS | 7 | ⬜ Not Started | 0% |
 | shadcn/ui | 8 | ⬜ Not Started | 0% |
@@ -70,6 +70,7 @@ Always consult source for accurate styling. Key file: `portfolio-nextjs/src/app/
 ### Week 2: Semantic HTML ✅ COMPLETE
 
 **Tasks**:
+
 - [x] Learn semantic elements (header, nav, main, section, article, footer)
 - [x] Understand lists (ul, ol, li)
 - [x] Learn forms (form, input, button, textarea, label)
@@ -79,6 +80,7 @@ Always consult source for accurate styling. Key file: `portfolio-nextjs/src/app/
 - [x] Complete about.html
 
 **Deliverables**:
+
 | File | Status |
 |------|--------|
 | `learn/html-fundamentals/index.html` | ✅ Complete |
@@ -86,6 +88,7 @@ Always consult source for accurate styling. Key file: `portfolio-nextjs/src/app/
 | `learn/html-fundamentals/contacts.html` | ✅ Complete |
 
 **Best Practices Learned**:
+
 - Use semantic HTML5 elements (header, nav, main, section, article, footer) for structure
 - Always pair `<label>` with `<input>` using `for`/`id` attributes for accessibility
 - `name` attribute determines form data submission, `id` is for element reference
@@ -98,29 +101,62 @@ Always consult source for accurate styling. Key file: `portfolio-nextjs/src/app/
 
 ## Phase 2: CSS Fundamentals (Weeks 3-4)
 
-### Week 3: CSS Basics 🟡 IN PROGRESS
+### Week 3: CSS Basics ✅ COMPLETE
 
 **Learning Goals**:
+
 - Understand CSS syntax and selectors
 - Learn CSS variables for theming
 - Link CSS to HTML
 - Apply Matrix theme colors
 
 **Tasks**:
+
 - [x] Learn CSS syntax (selector, property, value)
 - [x] Understand selectors (element, class, ID, descendant)
-- [x] Learn colors and text styling
+---
+
+### Week 3: CSS Fundamentals (Session Notes)
+
+- **Day 1**: Learned CSS variables in `:root`, how `var()` works, creating custom properties
+- **Day 2**: Learned universal selector `*`, CSS reset (`margin: 0`, `padding: 0`, `box-sizing: border-box`), and how `box-sizing: border-box` fixes width issues
+- **Day 3**: Learned HTML element `font-size: 16px` base for `rem` units, body base styles, line-height for accessibility
+- **Day 4**: Learned typography, link pseudo-classes (`:hover`, `:focus`), text-shadow for glow effects, matrix effects (scanlines, cursor blink animation)
+- **Day 5**: Implemented complete `styles.css` with Matrix theme from source portfolio, added Google Fonts and CSS link to `index.html`
+
+### What You Accomplished
+
+✅ Mastered CSS fundamentals from scratch
+✅ Applied Matrix theme from your source portfolio
+✅ Created complete stylesheet (135 lines of CSS)
+✅ Linked stylesheet and Google Fonts to HTML
+✅ Learned semantic HTML from Week 2
+✅ Built form with proper labels and structure
+
+---
+
+**Week 3 Deliverables:**
+- ✅ `styles.css` with full Matrix theme
+- ✅ `index.html` with proper structure and semantic elements
+- ✅ Google Fonts integrated
+- ✅ CSS reset applied for consistency
+- ✅ Form with proper labels (`for`/`id` pairs)
+- ✅ Buttons with submit and reset functionality
+
+**You're ready for Week 4: Box Model & Layout!**
 - [x] Create styles.css file
 - [x] Apply Matrix theme from source portfolio
 - [x] Add CSS reset/normalize
 - [x] Style index.html with base styles
 
 **Deliverables**:
+
 | File | Status |
 |------|--------|
 | `learn/html-fundamentals/styles.css` | ✅ Complete |
 
 **Best Practices to Learn**:
+
 | Practice | Why |
 |----------|-----|
 | CSS variables in `:root` | Define once, use everywhere - easy theme changes |
@@ -134,11 +170,13 @@ Always consult source for accurate styling. Key file: `portfolio-nextjs/src/app/
 ### Week 4: Box Model & Layout ⬜ NOT STARTED
 
 **Learning Goals**:
+
 - Understand box model (content, padding, border, margin)
 - Learn spacing properties
 - Master flexbox for layouts
 
 **Tasks**:
+
 - [ ] Understand box model components
 - [ ] Learn spacing properties (margin, padding, border)
 - [ ] Master display property (block, inline, flex, grid)
@@ -147,11 +185,13 @@ Always consult source for accurate styling. Key file: `portfolio-nextjs/src/app/
 - [ ] Style portfolio sections
 
 **Deliverables**:
+
 | File | Status |
 |------|--------|
 | Styled `index.html` | ⬜ Not started |
 
 **Best Practices to Learn**:
+
 | Practice | Why |
 |----------|-----|
 | `box-sizing: border-box` globally | Padding included in width calculations |
@@ -186,6 +226,7 @@ Always consult source for accurate styling. Key file: `portfolio-nextjs/src/app/
 ## Phase 4: Tailwind CSS (Week 7) ⬜ NOT STARTED
 
 **Tasks**:
+
 - [ ] Learn utility-first approach
 - [ ] Configure Matrix theme colors
 - [ ] Practice with component styling
@@ -195,12 +236,14 @@ Always consult source for accurate styling. Key file: `portfolio-nextjs/src/app/
 ## Phase 5: shadcn/ui (Week 8) ⬜ NOT STARTED
 
 **Tasks**:
+
 - [ ] Install and configure shadcn/ui
 - [ ] Add: button, card, input, textarea, sheet
 - [ ] Customize components with Matrix theme
 - [ ] Integrate Sheet into Header
 
 **Installation Commands**:
+
 ```bash
 bunx --bun shadcn@latest init
 bunx --bun shadcn@latest add button card input textarea sheet
@@ -211,6 +254,7 @@ bunx --bun shadcn@latest add button card input textarea sheet
 ## Phase 6: Vite & Routing (Weeks 9-10) ⬜ NOT STARTED
 
 **Tasks**:
+
 - [ ] Understand Vite vs Next.js
 - [ ] Install react-router-dom
 - [ ] Copy assets from Next.js
@@ -221,6 +265,7 @@ bunx --bun shadcn@latest add button card input textarea sheet
 ## Phase 7: TanStack Query (Weeks 11-12) ⬜ NOT STARTED
 
 **Tasks**:
+
 - [ ] Learn useQuery hook
 - [ ] Learn useMutation hook
 - [ ] Create service layer
@@ -231,10 +276,12 @@ bunx --bun shadcn@latest add button card input textarea sheet
 ## 📝 Session Notes
 
 ### Week 2 (HTML Fundamentals)
+
 - **Day 1**: Learned `for`/`id` relationship, form submission sends `name` not `id`
 - **Day 2**: Understood `<textarea>` is separate element, fixed in contacts.html
 
- ### Week 3: CSS Fundamentals (CSS Basics, Box Model & Layout)
+### Week 3: CSS Fundamentals (CSS Basics, Box Model & Layout)
+
 - **Day 1**: Learned CSS variables in `:root`, how `var()` works, creating custom properties
 - **Day 2**: Learned universal selector `*`, CSS reset (`margin: 0`, `padding: 0`, `box-sizing: border-box`), and how `box-sizing: border-box` fixes width issues
 - **Day 3**: Learned HTML element `font-size: 16px` base for `rem` units, body base styles, line-height for accessibility
@@ -297,24 +344,29 @@ bunx --bun shadcn@latest add button card input textarea sheet
 ## 📚 Learning Resources
 
 ### HTML/CSS
+
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [CSS-Tricks](https://css-tricks.com/)
 - [Flexbox Froggy](https://flexboxfroggy.com/)
 
 ### React
+
 - [React Official Docs](https://react.dev/)
 - [React Tutorial](https://react.dev/learn)
 
 ### Tailwind CSS
+
 - [Tailwind Docs](https://tailwindcss.com/docs/)
 - [Tailwind Cheat Sheet](https://tailwindcomponents.com/cheatsheet/)
 
 ### shadcn/ui
+
 - [shadcn/ui Docs](https://ui.shadcn.com/)
 - [Radix UI Primitives](https://www.radix-ui.com/primitives)
 - [class-variance-authority](https://cva.style/)
 
 ### TanStack Query
+
 - [TanStack Query Docs](https://tanstack.com/query/latest)
 
 ---
