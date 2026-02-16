@@ -47,14 +47,16 @@ Always consult source for accurate styling. Key file: `portfolio-nextjs/src/app/
 |-------|-------|--------|----------|
 | HTML Fundamentals | 1-2 | ✅ Complete | 100% |
 | CSS Fundamentals | 3-4 | ✅ Complete | 100% |
-| React Fundamentals | 5-6 | ⬜ Not Started | 0% |
+| React Fundamentals | 5-6 | 🔄 In Progress | 0% |
 | Tailwind CSS | 7 | ⬜ Not Started | 0% |
 | shadcn/ui | 8 | ⬜ Not Started | 0% |
 | Vite & Routing | 9-10 | ⬜ Not Started | 0% |
 | TanStack Query | 11-12 | ⬜ Not Started | 0% |
 
+**Learning Approach**: Migrate real components from `portfolio-nextjs` while learning React concepts.
+
 **Started**: January 12, 2026
-**Current Phase**: Week 3 - CSS Basics
+**Current Phase**: Week 5 - React Fundamentals (Migration Mode)
 
 ---
 
@@ -203,15 +205,31 @@ Always consult source for accurate styling. Key file: `portfolio-nextjs/src/app/
 
 ---
 
-## Phase 3: React Fundamentals (Weeks 5-6) ⬜ NOT STARTED
+## Phase 3: React Fundamentals (Weeks 5-6) 🔄 IN PROGRESS
 
-### Week 5: React Components
+### Week 5: React Components - Migration Mode
 
+**Learning by doing**: Migrate real components from your Next.js portfolio.
+
+**Component: Header** (First Migration)
+- [ ] Understand the source Header component (`portfolio-nextjs/src/components/common/header.tsx`)
 - [ ] Learn component structure (function components)
-- [ ] Understand JSX syntax
-- [ ] Learn props and passing data
-- [ ] Create Header, Footer, Button components
-- [ ] Pass props between components
+- [ ] Learn JSX syntax
+- [ ] Learn `useState` hook (mobile menu toggle)
+- [ ] Learn event handlers (`onClick`)
+- [ ] Create `src/components/common/header.tsx` in Vite project
+- [ ] Style with existing Tailwind classes
+- [ ] Integrate Header into App.tsx
+
+**Concepts You'll Learn**:
+| Concept | Where in Header |
+|---------|-----------------|
+| Function components | `export function Header()` |
+| JSX syntax | The return statement HTML-like code |
+| `useState` hook | `const [isMenuOpen, setIsMenuOpen] = useState(false)` |
+| Event handlers | `onClick={() => setIsMenuOpen(!isMenuOpen)}` |
+| Props | Will pass to children later |
+| Flexbox | Header layout (Week 4 concept in practice) |
 
 ### Week 6: React Hooks
 
