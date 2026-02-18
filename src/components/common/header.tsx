@@ -3,7 +3,6 @@ import { useState } from 'react';
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  console.log({ isMenuOpen });
   return (
     <header className="bg-background p-4">
       <div className="flex max-w-1064 mx-auto px-4 justify-between items-center h-16">
@@ -21,7 +20,6 @@ export function Header() {
           <span className="w-6 h-0.5 bg-mBlue mt-1"></span>
           <span className="w-6 h-0.5 bg-mBlue mt-1"></span>
         </button>
-        {/* Hambuger button - for mobile */}
         <ul className="hidden md:flex space-x-4">
           <li>
             <a href="/">
