@@ -1,93 +1,69 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 :root {
   font-family: "Fira Code", monospace;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #050505;
+  color: var(--foreground);
+  background-color: var(--background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.147 0.004 49.25);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.147 0.004 49.25);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.147 0.004 49.25);
-  --primary: oklch(0.216 0.006 56.043);
-  --primary-foreground: oklch(0.985 0.001 106.423);
-  --secondary: oklch(0.97 0.001 106.424);
-  --secondary-foreground: oklch(0.216 0.006 56.043);
-  --muted: oklch(0.97 0.001 106.424);
-  --muted-foreground: oklch(0.553 0.013 58.071);
-  --accent: oklch(0.97 0.001 106.424);
-  --accent-foreground: oklch(0.216 0.006 56.043);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.923 0.003 48.717);
-  --input: oklch(0.923 0.003 48.717);
-  --ring: oklch(0.709 0.01 56.259);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0.001 106.423);
-  --sidebar-foreground: oklch(0.147 0.004 49.25);
-  --sidebar-primary: oklch(0.216 0.006 56.043);
-  --sidebar-primary-foreground: oklch(0.985 0.001 106.423);
-  --sidebar-accent: oklch(0.97 0.001 106.424);
-  --sidebar-accent-foreground: oklch(0.216 0.006 56.043);
-  --sidebar-border: oklch(0.923 0.003 48.717);
-  --sidebar-ring: oklch(0.709 0.01 56.259);
+
+  /* Matrix base colors (define first) */
+  --matrix-bg: #050505;
+  --matrix-bg-light: #0b1a20;
+  --matrix-bg-lighter: #14282f;
+  --matrix-teal: #00ffcc;
+  --matrix-green: #008f11;
+  --matrix-neon: #39ff14;
+  --matrix-gray: #e0e0e0;
+  --matrix-border: #00ff41;
+
+  /* shadcn/ui variables reference Matrix colors */
+  --background: var(--matrix-bg);
+  --foreground: var(--matrix-gray);
+  --card: var(--matrix-bg-light);
+  --card-foreground: var(--matrix-gray);
+  --popover: var(--matrix-bg-light);
+  --popover-foreground: var(--matrix-gray);
+  --primary: var(--matrix-green);
+  --primary-foreground: var(--matrix-bg);
+  --secondary: var(--matrix-bg-lighter);
+  --secondary-foreground: var(--matrix-gray);
+  --muted: var(--matrix-bg-lighter);
+  --muted-foreground: #888888;
+  --accent: var(--matrix-teal);
+  --accent-foreground: var(--matrix-bg);
+  --destructive: #ff4444;
+  --border: var(--matrix-border);
+  --input: var(--matrix-border);
+  --ring: var(--matrix-teal);
+  --chart-1: var(--matrix-green);
+  --chart-2: var(--matrix-teal);
+  --chart-3: var(--matrix-neon);
+  --chart-4: var(--matrix-bg-light);
+  --chart-5: var(--matrix-bg-lighter);
+  --sidebar: var(--matrix-bg-light);
+  --sidebar-foreground: var(--matrix-gray);
+  --sidebar-primary: var(--matrix-green);
+  --sidebar-primary-foreground: var(--matrix-bg);
+  --sidebar-accent: var(--matrix-teal);
+  --sidebar-accent-foreground: var(--matrix-bg);
+  --sidebar-border: var(--matrix-border);
+  --sidebar-ring: var(--matrix-teal);
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 @theme inline {
@@ -133,56 +109,23 @@ button:focus-visible {
   --container-1064: 1064px;
   --spacing-1064: 1064px;
 
-  --color-m-purple: #008f11;
-  --color-mPurple: #008f11;
+  /* Tailwind utilities reference Matrix colors */
+  --color-m-purple: var(--matrix-green);
+  --color-mPurple: var(--matrix-green);
   --color-m-red: #2c4a6b;
   --color-mRed: #2c4a6b;
-  --color-m-green: #008f11;
-  --color-mGreen: #008f11;
-  --color-m-yellow: #39ff14;
-  --color-mYellow: #39ff14;
+  --color-m-green: var(--matrix-green);
+  --color-mGreen: var(--matrix-green);
+  --color-m-yellow: var(--matrix-neon);
+  --color-mYellow: var(--matrix-neon);
   --color-m-blue: #2b2b2b;
   --color-mBlue: #2b2b2b;
-  --color-m-teal: #00ffcc;
-  --color-mTeal: #00ffcc;
-  --color-m-gray: #e0e0e0;
-  --color-mGray: #e0e0e0;
-  --color-primary-bg: #050505;
-  --color-secondary-bg: #14282f;
-}
-
-.dark {
-  --background: oklch(0.147 0.004 49.25);
-  --foreground: oklch(0.985 0.001 106.423);
-  --card: oklch(0.216 0.006 56.043);
-  --card-foreground: oklch(0.985 0.001 106.423);
-  --popover: oklch(0.216 0.006 56.043);
-  --popover-foreground: oklch(0.985 0.001 106.423);
-  --primary: oklch(0.923 0.003 48.717);
-  --primary-foreground: oklch(0.216 0.006 56.043);
-  --secondary: oklch(0.268 0.007 34.298);
-  --secondary-foreground: oklch(0.985 0.001 106.423);
-  --muted: oklch(0.268 0.007 34.298);
-  --muted-foreground: oklch(0.709 0.01 56.259);
-  --accent: oklch(0.268 0.007 34.298);
-  --accent-foreground: oklch(0.985 0.001 106.423);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.553 0.013 58.071);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.216 0.006 56.043);
-  --sidebar-foreground: oklch(0.985 0.001 106.423);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0.001 106.423);
-  --sidebar-accent: oklch(0.268 0.007 34.298);
-  --sidebar-accent-foreground: oklch(0.985 0.001 106.423);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.553 0.013 58.071);
+  --color-m-teal: var(--matrix-teal);
+  --color-mTeal: var(--matrix-teal);
+  --color-m-gray: var(--matrix-gray);
+  --color-mGray: var(--matrix-gray);
+  --color-primary-bg: var(--matrix-bg);
+  --color-secondary-bg: var(--matrix-bg-lighter);
 }
 
 @layer base {
