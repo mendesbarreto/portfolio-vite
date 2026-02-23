@@ -1,12 +1,7 @@
 import './App.css';
-import { Header } from './components/common/header';
 
 function App() {
-  return (
-    <div>
-      <Header />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
