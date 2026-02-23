@@ -8,15 +8,18 @@ interface TypingTextProps {
 
 export function TypingText({ text, className = '', speed = 100 }: TypingTextProps) {
   const [displayedText, setDisplayedText] = useState('');
+  const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
     let i = 0;
     const interval = setInterval(() => {
+      setIsTyping(true);
       if (i < text.length) {
         setDisplayedText(text.substring(0, i + 1));
         i++;
       } else {
         clearInterval(interval);
+        setIsTyping(false);
       }
     }, speed);
 
@@ -26,7 +29,7 @@ export function TypingText({ text, className = '', speed = 100 }: TypingTextProp
   return (
     <span className={className}>
       {displayedText}
-      <span className="cursor-blink">|</span>
+      <span className={!isTyping ? 'cursor-blink' : ''}>{'█'}</span>
     </span>
   );
 }
