@@ -1,15 +1,14 @@
 import './App.css';
+import { TerminalBlock } from './components/common/terminal-block';
 import { TypingText } from './components/common/typing-text';
 
 function App() {
   return (
-    <div className="min-h-screen p-8">
-      <h1 className="text-4xl font-bold mb-4">Typing</h1>
+    <TerminalBlock title="Douglas">
       <div className="text-mGray font-mono">
-        <span className="text-mTeal">$</span>{' '}
-        <TypingText text="Welcome to Douglas Mendes - Portfolio" />
+        <span className="text-mTeal">$</span> <TypingText text="Noemie ama Minicrafit" />
       </div>
-    </div>
+    </TerminalBlock>
   );
 }
 
