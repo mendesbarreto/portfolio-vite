@@ -1,13 +1,15 @@
 import './App.css';
+import { BaseButton } from './components/common/base-button';
 import { TerminalBlock } from './components/common/terminal-block';
 import { TerminalHeader } from './components/common/terminal-header';
-import { TypingText } from './components/common/typing-text';
 
 function App() {
   return (
     <div>
       <TerminalHeader />
-      <TerminalBlock title="Portfolio"></TerminalBlock>
+      <TerminalBlock title="Portfolio">
+        <BaseButton title="contact-me"></BaseButton>
+      </TerminalBlock>
     </div>
   );
 }
