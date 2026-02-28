@@ -17,8 +17,8 @@ export function HomeSummary() {
         challenges.
       </div>
       <div className="text-mGray pt-8 leading-relaxed">
-        <span className="text-mTeal font-bold">My goal is simple:</span> build high-performing teams
-        and scalable solutions that actually work.
+        <span className="text-mTeal font-">My goal is simple:</span> build high-performing teams and
+        scalable solutions that actually work.
       </div>
     </div>
   );
