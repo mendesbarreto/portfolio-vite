@@ -8,9 +8,8 @@ function App() {
   return (
     <div>
       <TerminalHeader />
-      <TerminalBlock title="Portfolio">
-        <HomeSummary />
-      </TerminalBlock>
+      <HomeSummary />
+      <TerminalBlock title="Portfolio">[]</TerminalBlock>
     </div>
   );
 }
