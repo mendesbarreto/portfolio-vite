@@ -1,4 +1,3 @@
-import { BaseButton } from '@/components/common/base-button';
 import profileImage from '/img-profile.png';
 
 export function HomeSummary() {
@@ -20,8 +19,8 @@ export function HomeSummary() {
           team's challenges.
         </div>
         <div className="text-mGray pt-8 leading-relaxed">
-          <span className="text-mTeal font-">My goal is simple:</span> build high-performing teams
-          and scalable solutions that actually work.
+          <span className="text-mTeal font-bold">My goal is simple:</span> build high-performing
+          teams and scalable solutions that actually work.
         </div>
       </div>
       <div className="w-full md:w-117 max-w-117 mb-12">

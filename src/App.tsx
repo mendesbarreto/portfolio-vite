@@ -1,7 +1,7 @@
 import './App.css';
-import { BaseButton } from './components/common/base-button';
 import { TerminalBlock } from './components/common/terminal-block';
 import { TerminalHeader } from './components/common/terminal-header';
+import { Highlights } from './features/home/components/highlights';
 import { HomeSummary } from './features/home/components/home-summary';
 
 function App() {
@@ -9,7 +9,9 @@ function App() {
     <div>
       <TerminalHeader />
       <HomeSummary />
-      <TerminalBlock title="Portfolio">[]</TerminalBlock>
+      <TerminalBlock title="achievement">
+        <Highlights></Highlights>
+      </TerminalBlock>
     </div>
   );
 }
