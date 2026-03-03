@@ -1,8 +1,13 @@
 import { useState } from 'react';
 import { TypingText } from './typing-text';
 import { TerminalWindowControl } from './terminal-window-controll';
+import { Link, useRouter } from '@tanstack/react-router';
 
-const tabs = [{ name: 'home' }, { name: 'about-me' }, { name: 'contact' }];
+const tabs = [
+  { name: 'home', path: '/' },
+  { name: 'about-me', path: '/about' },
+  { name: 'contact', path: '/contact' },
+];
 
 export function TerminalHeader() {
   const [activeTab, setActiveTab] = useState(tabs[0].name);
@@ -16,8 +21,8 @@ export function TerminalHeader() {
             {' '}
             <nav className="flex gap-2">
               {tabs.map((tab) => (
-                <button
-                  type="button"
+                <Link
+                  to={tab.path}
                   key={tab.name}
                   className={`py-1 px-4 rounded focus:outline-none ${
                     tab.name === activeTab
@@ -27,7 +32,7 @@ export function TerminalHeader() {
                   onClick={() => setActiveTab(tab.name)}
                 >
                   {tab.name}
-                </button>
+                </Link>
               ))}
             </nav>
           </div>

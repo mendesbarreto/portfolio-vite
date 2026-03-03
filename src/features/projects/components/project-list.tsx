@@ -3,7 +3,7 @@ import { useState } from 'react';
 interface Project {
   name: string;
   shortDescription: string;
-  types: string[];
+  techStack: string[];
   company: string;
   role: string;
   timePeriod?: string;
@@ -48,7 +48,7 @@ export function ProjectCard({
             </p>
             {/* Project stack*/}
             <div className="flex flex-wrap gap-2 mt-3">
-              {project.types.map((type, tIndex) => {
+              {project.techStack.map((type, tIndex) => {
                 const id = `type-${tIndex}`;
                 return (
                   <span
@@ -103,7 +103,7 @@ export function ProjectList({ className }: ProjectsProps) {
       name: 'Kampi',
       shortDescription:
         'Intelligent copilot for shrimp farmers using AI and computer vision to replace manual guesswork with data-driven insights. Features three pillars: Pond Vision for biometric monitoring via smartphone photos, Optima for predictive analytics and growth forecasting, and FarmBook for team coordination across the production chain.',
-      types: [
+      techStack: [
         'Python',
         'TypeScript/JS',
         'MongoDB',
@@ -134,7 +134,7 @@ export function ProjectList({ className }: ProjectsProps) {
       name: 'Social.Mom',
       shortDescription:
         'Social network platform designed to counter social isolation during motherhood and reinforce the social safety net of families. Enables mothers to connect locally, plan activities, and access community groups and organizations in their area through a bilingual interface.',
-      types: ['iOS native', 'Android native', 'Java Spring Boot', 'React'],
+      techStack: ['iOS native', 'Android native', 'Java Spring Boot', 'React'],
       company: 'Social.mom',
       role: 'Senior Native iOS Developer',
       timePeriod: 'Oct 2019 – Aug 2021',
@@ -149,7 +149,7 @@ export function ProjectList({ className }: ProjectsProps) {
       name: 'Meu Carrefour',
       shortDescription:
         "All-in-one retail companion and cornerstone of Carrefour Brazil's omnichannel strategy, empowering millions of users to manage loyalty rewards, shop for groceries online, and streamline in-store visits through smart utility tools like barcode scanning and proximity services.",
-      types: ['iOS native', 'TypeScript', 'Node.js', 'Java'],
+      techStack: ['iOS native', 'TypeScript', 'Node.js', 'Java'],
       company: 'Carrefour Brazil',
       role: 'Senior iOS Developer',
       timePeriod: 'Feb 2016 – Jun 2016',
@@ -163,7 +163,7 @@ export function ProjectList({ className }: ProjectsProps) {
       name: 'Itaú Unibanco Mobile Banking',
       shortDescription:
         "Mobile banking application for one of Brazil's largest financial institutions, providing users with secure access to core banking services including account management and financial transactions.",
-      types: ['Windows Phone', 'iOS', '.NET'],
+      techStack: ['Windows Phone', 'iOS', '.NET'],
       company: 'Itaú Unibanco',
       role: 'Windows Phone and iOS Developer',
       timePeriod: 'July 2015 – Jan 2016',
@@ -177,7 +177,7 @@ export function ProjectList({ className }: ProjectsProps) {
       name: 'Mundo do Sítio',
       shortDescription:
         'Persistent, multi-user virtual world designed to integrate pedagogical goals with immersive gameplay as a digital extension of the Sítio do Picapau Amarelo IP. Featured complex economy, social interactions, and library of educational mini-games for millions of Brazilian students.',
-      types: ['Unity 3D', 'Flash ActionScript (SWC)', 'Java', 'SmartFox Server', 'HTML5/JS'],
+      techStack: ['Unity 3D', 'Flash ActionScript (SWC)', 'Java', 'SmartFox Server', 'HTML5/JS'],
       company: 'Editora Globo',
       role: 'Lead Game Programmer / Full Stack',
       timePeriod: 'Aug 2010 – Apr 2015',

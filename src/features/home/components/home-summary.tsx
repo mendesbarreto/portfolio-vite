@@ -1,4 +1,5 @@
 import profileImage from '/img-profile.png';
+//import badgeHandCraft from '/crafted-with-care.png';
 
 export function HomeSummary() {
   return (
@@ -23,8 +24,13 @@ export function HomeSummary() {
           teams and scalable solutions that actually work.
         </div>
       </div>
-      <div className="w-full md:w-117 max-w-117 mb-12">
-        <img src={profileImage} alt="Douglas" className="w-full h-auto" />
+      <div>
+        {/* <div className="absolute md:w-20 max-w-60 mb-12"> */}
+        {/*   <img src={badgeHandCraft} alt="Douglas" className="w-full h-auto" /> */}
+        {/* </div> */}
+        <div className="w-full md:w-117 max-w-117 mb-12">
+          <img src={profileImage} alt="Douglas" className="w-full h-auto" />
+        </div>
       </div>
     </div>
   );
