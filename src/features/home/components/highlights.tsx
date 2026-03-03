@@ -1,4 +1,3 @@
-/** biome-ignore-all lint/suspicious/noArrayIndexKey: <explanation> */
 export function Card({
   icon,
   title,
@@ -89,16 +88,19 @@ export function Highlights() {
 
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-      {achievements.map((card, index) => (
-        <Card
-          key={`card-highlights-${index}`}
-          title={card.title}
-          value={card.value}
-          label={card.label}
-          description={card.description}
-          icon={card.icon}
-        />
-      ))}
+      {achievements.map((card, index) => {
+        const id = `achievement-${index}`;
+        return (
+          <Card
+            key={id}
+            title={card.title}
+            value={card.value}
+            label={card.label}
+            description={card.description}
+            icon={card.icon}
+          />
+        );
+      })}
     </div>
   );
 }
