@@ -87,7 +87,7 @@ export function Highlights() {
   ];
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
       {achievements.map((card, index) => {
         const id = `achievement-${index}`;
         return (

@@ -1,27 +1,26 @@
-export interface ProjectsProps {
-  className?: string;
-  onToggle?: () => {};
-}
+import { useState } from 'react';
 
 interface Project {
   name: string;
   shortDescription: string;
   types: string[];
-  company?: string;
-  role?: string;
+  company: string;
+  role: string;
   timePeriod?: string;
   link?: string;
-  highlights?: string[];
+  highlights: string[];
 }
 
 export function ProjectCard({
+  index,
   project,
   isExpended,
   onToggle,
 }: {
+  index: number;
   project: Project;
   isExpended: boolean;
-  onToggle?: () => {};
+  onToggle?: (index: number) => void;
 }) {
   return (
     <div
@@ -31,7 +30,7 @@ export function ProjectCard({
       <button
         type="button"
         className="w-full p-6 text-left hover:bg-background rounded-lg transition-colors"
-        onClick={onToggle}
+        onClick={() => onToggle?.(index)}
       >
         <div className="flex items-start justify-between">
           <div className="flex-1">
@@ -73,12 +72,32 @@ export function ProjectCard({
             {'▼'}
           </span>
         </div>
+        {isExpended && (
+          <div className="border-t mt-2 py-4 border-m-gray/20">
+            {project.highlights.map((highlight, hIndex) => {
+              const id = `highlight-${hIndex}`;
+              return (
+                <div key={id} className="flex text-mGray text-sm items-start justiffy-start p-1.5">
+                  <span className="text-mTeal mr-3 mt-1">{'▹'}</span>
+                  {highlight}
+                </div>
+              );
+            })}
+          </div>
+        )}
       </button>
     </div>
   );
 }
 
+export interface ProjectsProps {
+  className?: string;
+  onToggle?: (index: number) => {};
+}
+
 export function ProjectList({ className }: ProjectsProps) {
+  const [expandedProject, setExpandedProject] = useState<number | null>(null);
+
   const projects: Project[] = [
     {
       name: 'Kampi',
@@ -175,8 +194,24 @@ export function ProjectList({ className }: ProjectsProps) {
       <h2 className="text-2xl font-bold text-white mb-4">
         <span className="text-mTeal">{'##'}</span> {'Main Projects'}
       </h2>
-      {projects.map((project, index) => {
-        return <ProjectCard key={`project-${index}`} project={project} isExpended={false} />;
+      {projects.map((project, tIndex) => {
+        const isExpended = expandedProject === tIndex;
+        const id = `project-${tIndex}`;
+        return (
+          <ProjectCard
+            key={id}
+            index={tIndex}
+            project={project}
+            isExpended={isExpended}
+            onToggle={(index) => {
+              if (expandedProject === index) {
+                setExpandedProject(null);
+                return;
+              }
+              setExpandedProject(index);
+            }}
+          />
+        );
       })}
     </section>
   );
