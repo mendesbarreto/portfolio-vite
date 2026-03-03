@@ -24,8 +24,7 @@ export function ProjectCard({
 }) {
   return (
     <div
-      className="
-      bg-background-light rounded-lg border border-m-gray/20 hover:border-mTeal hover:bg-background my-4"
+      className={`rounded-lg hover:bg-background my-4 border ${!isExpended ? 'bg-background-light border-m-gray/20 hover:border-mTeal' : 'border-mTeal bg-background hover:border-mTeal/80'}`}
     >
       <button
         type="button"
