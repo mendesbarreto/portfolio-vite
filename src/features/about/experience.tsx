@@ -166,19 +166,19 @@ function ExperienceCard({
         <div className="flex items-start justify-between">
           <div className="flex-1">
             {/* Job Title */}
-            <h3 className="text-lg text-white font-bold">{job.title}</h3>
+            <h3 className="text-2xl text-white font-bold">{job.title}</h3>
             {/* Project Role and company*/}
-            <p className="text-mTeal font-semibold text-sm py-2">
+            <p className="text-mTeal font-semibold text-lg py-2">
               <span>{job.company}</span>
               <span className="text-white">{' • '}</span>
               <span>{job.size}</span>
             </p>
             {/* Company short description*/}
-            <p className={`text-mGray text-sm ${!isExpended ? 'line-clamp-2' : ''}`}>
+            <p className={`text-mGray text-md ${!isExpended ? 'line-clamp-2' : ''}`}>
               {job.companyDescription}
             </p>
             {/* Job period */}
-            <p className="mt-2 text-xs">
+            <p className="mt-2 text-md">
               <span className="text-mTeal">{job.period}</span>
             </p>
           </div>
@@ -195,7 +195,7 @@ function ExperienceCard({
             {job.highlights.map((highlight, hIndex) => {
               const id = `highlight-${hIndex}`;
               return (
-                <div key={id} className="flex text-mGray text-sm items-start justiffy-start p-1.5">
+                <div key={id} className="flex text-mGray text-lg items-start justiffy-start p-1.5">
                   <span className="text-mTeal mr-3 mt-1">{'▹'}</span>
                   {highlight}
                 </div>

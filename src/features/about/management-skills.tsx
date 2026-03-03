@@ -30,7 +30,9 @@ export function ManagementSkills({ className = '' }: { className?: string }) {
               hover:bg-background 
               items-center 
               justiffy-start 
-              p-2"
+              p-2
+              text-lg
+              "
             >
               <div key={id} className="flex text-mGray p-2 leading-relaxed">
                 <span className="text-mTeal mr-3 mt-1">{'▹'}</span>

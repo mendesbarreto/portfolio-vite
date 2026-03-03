@@ -74,7 +74,7 @@ export function TechSkills({ className = '' }: { className?: string }) {
             >
               <div
                 key={id}
-                className="flex flex-col text-mTeal text-md font-bold p-2 leading-relaxed"
+                className="flex flex-col text-mTeal text-2xl font-bold p-2 leading-relaxed"
               >
                 {item.title}
                 <div className="flex flex-wrap gap-2 mt-4 justify-start">
@@ -83,7 +83,7 @@ export function TechSkills({ className = '' }: { className?: string }) {
                     return (
                       <span
                         key={id}
-                        className="bg-background border border-mTeal/30 rounded-sm p-1.5 text-mGray text-sm"
+                        className="bg-background border border-mTeal/30 font-normal rounded-sm p-1.5 text-mGray text-lg"
                       >
                         {skill}
                       </span>
