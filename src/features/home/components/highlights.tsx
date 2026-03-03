@@ -42,7 +42,6 @@ export function Highlights() {
       value: '86%',
       label: 'CI/CD Speed Improvement',
       description: 'Build & deploy: 50min → 7min',
-      color: 'text-mTeal',
     },
     {
       icon: '🚢',
@@ -50,7 +49,6 @@ export function Highlights() {
       value: '30+',
       label: 'Apps Launched to Production',
       description: 'Mobile, web & games across platforms',
-      color: 'text-mTeal',
     },
     {
       icon: '💰',
@@ -58,7 +56,6 @@ export function Highlights() {
       value: '20%',
       label: 'Infrastructure Cost Cut',
       description: 'Full cloud migration from AWS to GCP',
-      color: 'text-mTeal',
     },
     {
       icon: '💡',
@@ -66,7 +63,6 @@ export function Highlights() {
       value: 'Multi-Year',
       label: 'Technical Talks Delivered',
       description: 'Best practices in coding, testing & QA',
-      color: 'text-mTeal',
     },
     {
       icon: '🏦',
@@ -74,7 +70,6 @@ export function Highlights() {
       value: '3',
       label: 'Banking Apps Delivered',
       description: 'High-security financial mobile solutions',
-      color: 'text-mTeal',
     },
     {
       icon: '🔄',
@@ -82,7 +77,6 @@ export function Highlights() {
       value: 'COBOL→.NET',
       label: 'Modernization Expert',
       description: 'Migrated critical legacy systems',
-      color: 'text-mTeal',
     },
     {
       icon: '🏆',
@@ -90,7 +84,6 @@ export function Highlights() {
       value: 'TDD/BDD',
       label: 'Testing Culture Established',
       description: 'Promoted quality practices across teams',
-      color: 'text-mTeal',
     },
   ];
 
@@ -103,7 +96,6 @@ export function Highlights() {
           value={card.value}
           label={card.label}
           description={card.description}
-          color={card.color}
           icon={card.icon}
         />
       ))}
