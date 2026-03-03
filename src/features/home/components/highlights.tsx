@@ -5,14 +5,12 @@ export function Card({
   value,
   label,
   description,
-  color,
 }: {
   title: string;
   value: string;
   label: string;
   description: string;
   icon: React.ReactNode;
-  color: string;
 }) {
   return (
     <div
