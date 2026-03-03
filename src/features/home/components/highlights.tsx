@@ -14,7 +14,7 @@ export function Card({
   return (
     <div
       className="
-      bg-background-light p-3 rounded-lg border border-m-gray/20 hover:border-mTeal hover:scale-105 hover:shadow-lg"
+      bg-background-light p-3  rounded-lg border border-m-gray/20 hover:border-mTeal hover:scale-105 hover:shadow-lg"
     >
       <div className="text-4xl m-3">{icon}</div>
       <div className="text-lg text-mTeal font-bold">{title}</div>
