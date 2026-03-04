@@ -24,7 +24,7 @@ export function ContactSummary({ className = '' }: { className?: string }) {
   );
 }
 
-export function CreaditDescription({ className = '' }: { className?: string }) {
+export function CreditDescription({ className = '' }: { className?: string }) {
   return (
     <div className={`flex flex-col gap-4 ${className} mt-4`}>
       <div className="border text-lg border-mTeal/10 rounded-xl bg-background p-4 leading-relaxed">
@@ -132,7 +132,7 @@ function Contact() {
       <ContactSummary className="mb-4" />
       <Contacts />
       <SectionAbout title="Credits" className="mt-8" />
-      <CreaditDescription />
+      <CreditDescription />
       <WebSiteHandCrafted />
     </div>
   );

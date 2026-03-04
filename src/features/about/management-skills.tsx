@@ -13,7 +13,7 @@ export function ManagementSkills({ className = '' }: { className?: string }) {
   ];
   return (
     <div className={`flex flex-col gap-4 w-full ${className}`}>
-      <SectionAbout title="Management Stills" />
+      <SectionAbout title="Management Skills" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {skills.map((skill, index) => {
           const id = `skill-${index}`;

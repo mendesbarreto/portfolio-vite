@@ -53,7 +53,7 @@ export function TechSkills({ className = '' }: { className?: string }) {
 
   return (
     <section className={`flex flex-col gap-4 w-full ${className}`}>
-      <SectionAbout title="Management Stills" />
+      <SectionAbout title="Tech Skills" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {techSkillsData.map((item, index) => {
           const id = `skill-${index}`;
