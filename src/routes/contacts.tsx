@@ -30,7 +30,7 @@ export function CreditDescription({ className = '' }: { className?: string }) {
       <div className="border text-lg border-mTeal/10 rounded-xl bg-background p-4 leading-relaxed">
         <div className="text-mGray">
           This site was designed and coded by a real-life{' '}
-          <span className="text-mTeal font-bold">{'human(basically ME)'}</span>, . No AI teammates
+          <span className="text-mTeal font-bold">{'human (basically ME)'}</span>. No AI teammates
           here! (Except for a few of the cool images you see.)"{' '}
         </div>
       </div>
