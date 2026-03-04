@@ -3,6 +3,22 @@ import { SectionAbout } from './section-about';
 export function TechSkills({ className = '' }: { className?: string }) {
   const techSkillsData = [
     {
+      title: 'AI Development Tools',
+      skills: [
+        'GitHub Copilot',
+        'copilot-cli',
+        'Claude Code',
+        'OpenCode',
+        'Codex',
+        'Cursor',
+        'Z.ai',
+        'gemini-cli',
+        'Gemini',
+        'GLM-5',
+        'Claude Opus 4',
+      ],
+    },
+    {
       title: 'Languages & Frameworks',
       skills: [
         'Python',
