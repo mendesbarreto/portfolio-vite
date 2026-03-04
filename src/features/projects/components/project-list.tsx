@@ -14,17 +14,17 @@ interface Project {
 export function ProjectCard({
   index,
   project,
-  isExpended,
+  isUncollapse,
   onToggle,
 }: {
   index: number;
   project: Project;
-  isExpended: boolean;
+  isUncollapse: boolean;
   onToggle?: (index: number) => void;
 }) {
   return (
     <div
-      className={`rounded-lg hover:bg-background my-4 border ${!isExpended ? 'bg-background-light border-m-gray/20 hover:border-mTeal' : 'border-mTeal bg-background hover:border-mTeal/80'}`}
+      className={`rounded-lg hover:bg-background my-4 border ${!isUncollapse ? 'bg-background-light border-m-gray/20 hover:border-mTeal' : 'border-mTeal bg-background hover:border-mTeal/80'}`}
     >
       <button
         type="button"
@@ -42,7 +42,7 @@ export function ProjectCard({
               <span>{project.company}</span>
             </p>
             {/* Project short description*/}
-            <p className={`text-mGray text-md ${!isExpended ? 'line-clamp-2' : ''}`}>
+            <p className={`text-mGray text-md ${!isUncollapse ? 'line-clamp-2' : ''}`}>
               {project.shortDescription}
             </p>
             {/* Project stack*/}
@@ -66,12 +66,12 @@ export function ProjectCard({
           </div>
           {/* Project Arrow*/}
           <span
-            className={`text-mTeal text-xl transition-transform ${isExpended ? 'rotate-180' : ''} `}
+            className={`text-mTeal text-xl transition-transform ${isUncollapse ? 'rotate-180' : ''} `}
           >
             {'▼'}
           </span>
         </div>
-        {isExpended && (
+        {isUncollapse && (
           <div className="border-t mt-2 py-4 border-m-gray/20">
             {project.highlights.map((highlight, hIndex) => {
               const id = `highlight-${hIndex}`;
@@ -201,7 +201,7 @@ export function ProjectList({ className }: ProjectsProps) {
             key={id}
             index={tIndex}
             project={project}
-            isExpended={isExpended}
+            isUncollapse={isExpended}
             onToggle={(index) => {
               if (expandedProject === index) {
                 setExpandedProject(null);

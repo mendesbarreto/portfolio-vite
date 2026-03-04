@@ -128,7 +128,7 @@ export function Experience({ className = '' }: { className?: string }) {
             key={id}
             index={jIndex}
             job={job}
-            isExpended={isExpended}
+            isUncollapse={isExpended}
             onToggle={(index) => {
               if (expandedProject === index) {
                 setExpandedProject(null);
@@ -146,17 +146,17 @@ export function Experience({ className = '' }: { className?: string }) {
 function ExperienceCard({
   index,
   job,
-  isExpended,
+  isUncollapse,
   onToggle,
 }: {
   index: number;
   job: Job;
-  isExpended: boolean;
+  isUncollapse: boolean;
   onToggle?: (index: number) => void;
 }) {
   return (
     <div
-      className={`rounded-lg hover:bg-background my-4 border ${!isExpended ? 'bg-background-light border-m-gray/20 hover:border-mTeal' : 'border-mTeal bg-background hover:border-mTeal/80'}`}
+      className={`rounded-lg hover:bg-background my-4 border ${!isUncollapse ? 'bg-background-light border-m-gray/20 hover:border-mTeal' : 'border-mTeal bg-background hover:border-mTeal/80'}`}
     >
       <button
         type="button"
@@ -174,7 +174,7 @@ function ExperienceCard({
               <span>{job.size}</span>
             </p>
             {/* Company short description*/}
-            <p className={`text-mGray text-md ${!isExpended ? 'line-clamp-2' : ''}`}>
+            <p className={`text-mGray text-md ${!isUncollapse ? 'line-clamp-2' : ''}`}>
               {job.companyDescription}
             </p>
             {/* Job period */}
@@ -184,13 +184,13 @@ function ExperienceCard({
           </div>
           {/* Project Arrow*/}
           <span
-            className={`text-mTeal text-xl transition-transform ${isExpended ? 'rotate-180' : ''} `}
+            className={`text-mTeal text-xl transition-transform ${isUncollapse ? 'rotate-180' : ''} `}
           >
             {'▼'}
           </span>
         </div>
         {/* Job highlights  */}
-        {isExpended && (
+        {isUncollapse && (
           <div className="border-t mt-2 py-4 border-m-gray/20">
             {job.highlights.map((highlight, hIndex) => {
               const id = `highlight-${hIndex}`;
