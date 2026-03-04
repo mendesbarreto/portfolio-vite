@@ -5,7 +5,6 @@ import './index.css';
 import { queryClient } from './queryClient';
 import { RouterProvider, createRouter } from '@tanstack/react-router';
 import { routeTree } from './routeTree.gen';
-import { TerminalHeader } from './components/common/terminal-header';
 
 const router = createRouter({ routeTree });
 

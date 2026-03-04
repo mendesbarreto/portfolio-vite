@@ -1,5 +1,4 @@
 import { TerminalBlock } from '@/components/common/terminal-block';
-import { TerminalHeader } from '@/components/common/terminal-header';
 import { Highlights } from '@/features/home/components/highlights';
 import { HomeSummary } from '@/features/home/components/home-summary';
 import { ProjectList } from '@/features/projects/components/project-list';
