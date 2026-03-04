@@ -23,6 +23,8 @@ export function Experience({ className = '' }: { className?: string }) {
       period: '2020-10 – Present',
       location: 'Quebec, Canada',
       highlights: [
+        'Built self-service AI prototyping workflow, cutting PoC delivery time from 2 days to 4 hours.',
+        'Deployed AI tooling and training, boosting per-engineer productivity by 3x with maintained quality.',
         'Led a 9-engineer team in the development and scaling of complex applications',
         'Spearheaded a full-stack migration from AWS to Google Cloud, achieving a 20% reduction in infrastructure costs',
         'Led platform re-architecture improving DX and UX, driving product-market fit',
@@ -192,12 +194,12 @@ function ExperienceCard({
         {/* Job highlights  */}
         {isUncollapse && (
           <div className="border-t mt-2 py-4 border-m-gray/20">
-            {job.highlights.map((highlight, hIndex) => {
-              const id = `highlight-${hIndex}`;
+            {job.highlights.map((experience, hIndex) => {
+              const id = `experience-${hIndex}`;
               return (
                 <div key={id} className="flex text-mGray text-lg items-start justify-start p-1">
                   <span className="text-mTeal mr-3 mt-1">{'▹'}</span>
-                  {highlight}
+                  {experience}
                 </div>
               );
             })}

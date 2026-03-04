@@ -28,12 +28,12 @@ export function Card({
 export function Highlights() {
   const achievements = [
     {
-      icon: '🤖',
-      title: 'AI Force Multiplier',
+      icon: '🔥',
+      title: 'AI-Powered Delivery',
       value: '3x',
-      label: 'Per-Engineer Productivity',
-      description: 'Productivity: 3 days → 4 hours via AI workflows',
-      color: 'text-purple-500',
+      label: 'Productivity & Speed',
+      description: 'PoC delivery: 2 days → 4 hours | 3x per-engineer productivity',
+      color: 'text-indigo-500',
     },
     {
       icon: '🚀',
