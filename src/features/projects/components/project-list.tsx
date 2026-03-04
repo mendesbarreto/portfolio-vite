@@ -34,15 +34,15 @@ export function ProjectCard({
         <div className="flex items-start justify-between">
           <div className="flex-1">
             {/* Project name */}
-            <h3 className="text-lg text-white font-bold">{project.name}</h3>
+            <h3 className="text-2xl text-white font-bold">{project.name}</h3>
             {/* Project Role and company*/}
-            <p className="text-mTeal font-semibold text-sm py-2">
+            <p className="text-mTeal font-semibold text-lg py-2">
               <span>{project.role}</span>
               <span className="text-white">{' • '}</span>
               <span>{project.company}</span>
             </p>
             {/* Project short description*/}
-            <p className={`text-mGray text-sm ${!isExpended ? 'line-clamp-2' : ''}`}>
+            <p className={`text-mGray text-md ${!isExpended ? 'line-clamp-2' : ''}`}>
               {project.shortDescription}
             </p>
             {/* Project stack*/}
@@ -52,7 +52,7 @@ export function ProjectCard({
                 return (
                   <span
                     key={id}
-                    className="bg-background border border-mTeal/30 rounded-sm px-1 text-mGray text-sm"
+                    className="bg-background border border-mTeal/30 rounded-sm px-1 text-mGray text-md"
                   >
                     {type}
                   </span>
@@ -60,7 +60,7 @@ export function ProjectCard({
               })}
             </div>
             {/* Project Dates*/}
-            <p className="mt-2 text-xs">
+            <p className="mt-2 text-sm">
               <span className="text-mTeal">{project.timePeriod}</span>
             </p>
           </div>
@@ -76,7 +76,7 @@ export function ProjectCard({
             {project.highlights.map((highlight, hIndex) => {
               const id = `highlight-${hIndex}`;
               return (
-                <div key={id} className="flex text-mGray text-sm items-start justiffy-start p-1.5">
+                <div key={id} className="flex text-mGray text-md items-start justiffy-start p-1.5">
                   <span className="text-mTeal mr-3 mt-1">{'▹'}</span>
                   {highlight}
                 </div>

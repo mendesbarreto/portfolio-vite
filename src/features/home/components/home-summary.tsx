@@ -1,5 +1,4 @@
 import profileImage from '/img-profile.png';
-//import badgeHandCraft from '/crafted-with-care.png';
 
 export function HomeSummary() {
   return (
