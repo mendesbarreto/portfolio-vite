@@ -19,7 +19,7 @@ export function Card({
       <div className="text-4xl m-3">{icon}</div>
       <div className="text-lg text-mTeal font-bold">{title}</div>
       <div className="text-3xl text-mTeal font-bold py-3">{value}</div>
-      <div className="text-s text-white font-semibold">{label}</div>
+      <div className="text-sm text-white font-semibold">{label}</div>
       <div className="text-sm text-mGray py-2">{description}</div>
     </div>
   );

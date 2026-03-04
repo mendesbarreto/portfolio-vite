@@ -23,7 +23,7 @@ export function TechSkills({ className = '' }: { className?: string }) {
       title: 'Architecture & APIs',
       skills: [
         'GraphQL',
-        'Restful APIs',
+        'RESTful APIs',
         'Microservices Architecture',
         'Event-Driven Systems',
         'Design Patterns',

@@ -7,7 +7,7 @@ export function ManagementSkills({ className = '' }: { className?: string }) {
     'Experienced in collaborating with product managers, designers, and cross-functional teams to deliver robust solutions',
     'Led client engagements and delivered solutions across multiple organizations as a technical consultant',
     'Successfully managed complex migration projects, full game development lifecycles, and multi-client deliverables',
-    'Established development processes using JIRA/Github Projects, implemented CI/CD pipelines, and promoted TDD/BDD practices',
+    'Established development processes using JIRA/GitHub Projects, implemented CI/CD pipelines, and promoted TDD/BDD practices',
     'Skilled in managing client relationships, defining requirements, and aligning technical solutions with business objectives',
     'Delivered technical talks and presentations to engineering teams on best practices in coding, testing, and QA implementation',
   ];

@@ -26,7 +26,7 @@ export function Experience({ className = '' }: { className?: string }) {
         'Led a 9-engineer team in the development and scaling of complex applications',
         'Spearheaded a full-stack migration from AWS to Google Cloud, achieving a 20% reduction in infrastructure costs',
         'Led platform re-architecture improving DX and UX, driving product-market fit',
-        'Introduced trunk-based development to the team, reducing gitflow overhead and significantly improving feature lead time',
+        'Introduced trunk-based development to the team, reducing Gitflow overhead and significantly improving feature lead time',
         'Pioneered AI-powered 1:1 methodology creating searchable, data-driven records of discussions and goals',
         'Re-architected CI/CD pipelines, cutting build/deploy time from 50 to 7 minutes',
         'Increased feature delivery velocity by 5x, reducing lead time from 13 weeks to 2 weeks',
@@ -82,7 +82,7 @@ export function Experience({ className = '' }: { className?: string }) {
         'Developed 3 mobile banking applications and 4 e-commerce apps, delivering high-quality financial and retail solutions',
         'Architected and developed a "white-label" e-commerce mobile platform, enabling the rapid deployment of customized storefronts from a single codebase',
         'Delivered multiple technical talks to engineering teams on best practices in coding, testing, and QA implementation',
-        'Designed and implemented robust CI/CD pipelines (Jenkins, Bitrise, TravisCI) and promoted TDD/BDD practices (XCTest, Kif)',
+        'Designed and implemented robust CI/CD pipelines (Jenkins, Bitrise, Travis CI) and promoted TDD/BDD practices (XCTest, Kif)',
       ],
     },
     {
