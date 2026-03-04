@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { TypingText } from './typing-text';
 import { TerminalWindowControl } from './terminal-window-control';
 import { Link, useLocation } from '@tanstack/react-router';
