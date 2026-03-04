@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { TypingText } from './typing-text';
 import { TerminalWindowControl } from './terminal-window-control';
-import { Link } from '@tanstack/react-router';
+import { Link, useLocation } from '@tanstack/react-router';
 
 const tabs = [
   { name: 'home', path: '/' },
@@ -10,7 +10,8 @@ const tabs = [
 ];
 
 export function TerminalHeader() {
-  const [activeTab, setActiveTab] = useState(tabs[0].name);
+  const pathname = useLocation().pathname || 'home';
+  const activeTab = tabs.find((tab) => tab.path === pathname)?.name || 'home';
 
   return (
     <div className={`bg-black border border-mTeal rounded-lg p-4 font-mono`}>
@@ -29,7 +30,6 @@ export function TerminalHeader() {
                       ? 'bg-secondary text-mTeal border border-mTeal'
                       : 'text-mGray hover:text-mTeal hover:bg-background-light/50'
                   }`}
-                  onClick={() => setActiveTab(tab.name)}
                 >
                   {tab.name}
                 </Link>
