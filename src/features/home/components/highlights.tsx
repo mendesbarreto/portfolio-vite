@@ -28,6 +28,14 @@ export function Card({
 export function Highlights() {
   const achievements = [
     {
+      icon: '🤖',
+      title: 'AI Force Multiplier',
+      value: '3x',
+      label: 'Per-Engineer Productivity',
+      description: 'Productivity: 3 days → 4 hours via AI workflows',
+      color: 'text-purple-500',
+    },
+    {
       icon: '🚀',
       title: 'Speed Master',
       value: '5x',
@@ -76,13 +84,6 @@ export function Highlights() {
       value: 'COBOL→.NET',
       label: 'Modernization Expert',
       description: 'Migrated critical legacy systems',
-    },
-    {
-      icon: '🏆',
-      title: 'Agile Champion',
-      value: 'TDD/BDD',
-      label: 'Testing Culture Established',
-      description: 'Promoted quality practices across teams',
     },
   ];
 
