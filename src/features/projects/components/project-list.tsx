@@ -76,8 +76,8 @@ export function ProjectCard({
             {project.highlights.map((highlight, hIndex) => {
               const id = `highlight-${hIndex}`;
               return (
-                <div key={id} className="flex text-mGray text-md items-start justiffy-start p-1.5">
-                  <span className="text-mTeal mr-3 mt-1">{'▹'}</span>
+                <div key={id} className="flex text-mGray text-md items-center p-2">
+                  <span className="text-mTeal mr-3 ">{'▹'}</span>
                   {highlight}
                 </div>
               );

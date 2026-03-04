@@ -1,4 +1,4 @@
-import { TerminalWindowControl } from './terminal-window-controll';
+import { TerminalWindowControl } from './terminal-window-control';
 
 interface TerminalProps {
   children: React.ReactNode;

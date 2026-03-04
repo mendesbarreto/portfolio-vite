@@ -195,7 +195,7 @@ function ExperienceCard({
             {job.highlights.map((highlight, hIndex) => {
               const id = `highlight-${hIndex}`;
               return (
-                <div key={id} className="flex text-mGray text-lg items-start justiffy-start p-1.5">
+                <div key={id} className="flex text-mGray text-lg items-start justify-start p-1">
                   <span className="text-mTeal mr-3 mt-1">{'▹'}</span>
                   {highlight}
                 </div>

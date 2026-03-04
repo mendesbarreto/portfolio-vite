@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { TypingText } from './typing-text';
-import { TerminalWindowControl } from './terminal-window-controll';
+import { TerminalWindowControl } from './terminal-window-control';
 import { Link } from '@tanstack/react-router';
 
 const tabs = [
