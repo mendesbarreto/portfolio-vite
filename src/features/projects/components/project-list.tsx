@@ -194,14 +194,14 @@ export function ProjectList({ className }: ProjectsProps) {
         <span className="text-mTeal">{'##'}</span> {'Main Projects'}
       </h2>
       {projects.map((project, tIndex) => {
-        const isExpended = expandedProject === tIndex;
+        const isUncollapse = expandedProject === tIndex;
         const id = `project-${tIndex}`;
         return (
           <ProjectCard
             key={id}
             index={tIndex}
             project={project}
-            isUncollapse={isExpended}
+            isUncollapse={isUncollapse}
             onToggle={(index) => {
               if (expandedProject === index) {
                 setExpandedProject(null);

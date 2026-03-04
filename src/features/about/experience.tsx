@@ -121,14 +121,14 @@ export function Experience({ className = '' }: { className?: string }) {
         <span className="text-mTeal">{'##'}</span> {'Main Projects'}
       </h2>
       {jobs.map((job, jIndex) => {
-        const isExpended = expandedProject === jIndex;
+        const isUncollapse = expandedProject === jIndex;
         const id = `job-${jIndex}`;
         return (
           <ExperienceCard
             key={id}
             index={jIndex}
             job={job}
-            isUncollapse={isExpended}
+            isUncollapse={isUncollapse}
             onToggle={(index) => {
               if (expandedProject === index) {
                 setExpandedProject(null);

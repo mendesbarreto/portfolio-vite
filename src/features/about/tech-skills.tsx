@@ -69,7 +69,7 @@ export function TechSkills({ className = '' }: { className?: string }) {
               hover:border-mTeal 
               hover:bg-background 
               items-center 
-              justiffy-start 
+              justify-start 
               p-2"
             >
               <div
