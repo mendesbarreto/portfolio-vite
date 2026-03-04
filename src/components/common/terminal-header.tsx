@@ -6,7 +6,7 @@ import { Link } from '@tanstack/react-router';
 const tabs = [
   { name: 'home', path: '/' },
   { name: 'about-me', path: '/about' },
-  { name: 'contact', path: '/contact' },
+  { name: 'contact', path: '/contacts' },
 ];
 
 export function TerminalHeader() {
