@@ -7,7 +7,6 @@ import { RouterProvider, createRouter } from '@tanstack/react-router';
 import { routeTree } from './routeTree.gen';
 
 const router = createRouter({ routeTree });
-
 const root = document.getElementById('root');
 
 if (!root) {
