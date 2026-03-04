@@ -2,6 +2,8 @@ import { createFileRoute } from '@tanstack/react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone, faMapMarkerAlt, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { SectionAbout } from '@/features/about/section-about';
+import badgeHandCraft from '/crafted-with-care.png';
 
 export const Route = createFileRoute('/contacts')({
   component: Contact,
@@ -16,6 +18,20 @@ export function ContactSummary({ className = '' }: { className?: string }) {
           <span className="text-mTeal font-bold">new opportunities</span>, collaborations, or just
           connecting with fellow tech enthusiasts. Feel free to reach out through any of the
           channels below.
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function CreaditDescription({ className = '' }: { className?: string }) {
+  return (
+    <div className={`flex flex-col gap-4 ${className} mt-4`}>
+      <div className="border text-lg border-mTeal/10 rounded-xl bg-background p-4 leading-relaxed">
+        <div className="text-mGray">
+          This site was designed and coded by a real-life{' '}
+          <span className="text-mTeal font-bold">{'human(basically ME)'}</span>, . No AI teammates
+          here! (Except for a few of the cool images you see.)"{' '}
         </div>
       </div>
     </div>
@@ -99,11 +115,25 @@ export function Contacts({ className = '' }: { className?: string }) {
   );
 }
 
+function WebSiteHandCrafted() {
+  return (
+    <div className="flex flex-col items-center justify-center  gap-4 w-full">
+      <div className="flex w-100 p-4">
+        <img src={badgeHandCraft} alt="Douglas" className="w-full h-auto" />
+      </div>
+    </div>
+  );
+}
+
 function Contact() {
   return (
-    <div>
-      <ContactSummary />
+    <div className="flex flex-col gap-4 w-full">
+      <SectionAbout title="Human-to-Human" className="mt-8" />
+      <ContactSummary className="mb-4" />
       <Contacts />
+      <SectionAbout title="Credits" className="mt-8" />
+      <CreaditDescription />
+      <WebSiteHandCrafted />
     </div>
   );
 }

@@ -25,9 +25,6 @@ export function HomeSummary() {
         </div>
       </div>
       <div>
-        {/* <div className="absolute md:w-20 max-w-60 mb-12"> */}
-        {/*   <img src={badgeHandCraft} alt="Douglas" className="w-full h-auto" /> */}
-        {/* </div> */}
         <div className="w-full md:w-117 max-w-117 mb-12">
           <img src={profileImage} alt="Douglas" className="w-full h-auto" />
         </div>
