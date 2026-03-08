@@ -1,0 +1,677 @@
+{
+  "user": {
+    "_id": "69aa3ae146d8807e7f4071ee",
+    "name": "Douglas",
+    "lastName": "Mendes",
+    "phoneNumber": "+1 (581) 748 0657",
+    "email": "mendes-barreto@live.com",
+    "gender": "male",
+    "profile": {
+      "currentRole": "Senior Software Engineering Manager",
+      "education": {
+        "title": "Bachelor's Degree in Game Design and Development",
+        "institution": "University Anhembi Morumbi",
+        "startDate": "2007-01-10T00:00:00.000Z",
+        "endDate": "2010-12-22T00:00:00.000Z"
+      },
+      "languages": [
+        {
+          "name": "English",
+          "proficiency": "Fluent"
+        },
+        {
+          "name": "Portuguese",
+          "proficiency": "Native"
+        },
+        {
+          "name": "French",
+          "proficiency": "Professional"
+        }
+      ],
+      "yearsOfExperience": 14,
+      "bio": "With **14+ years** in software engineering, I've worked across the full stack, leading and mentoring teams that ship quality products. My focus is on delivering what clients actually need by collaborating closely with product and design, leveraging **AI-augmented workflows**, and ruthlessly trimming down processes. This means practical agile, automation, and a culture of high quality. I stay hands-on by architecting systems, managing migrations, and implementing **AI tools** that multiply team productivity. This keeps my skills sharp and helps me understand my team's challenges.",
+      "goal": "build high-performing teams and scalable solutions",
+      "linkedInUrl": "https://www.linkedin.com/in/mendesbarreto/",
+      "githubUrl": "https://github.com/mendesbarreto",
+      "twitterUrl": "https://x.com/DougTheDev",
+      "facebookUrl": "https://www.facebook.com/douglasMendesBarreto",
+      "websiteUrl": "https://mendesbarreto.gobit.dev/"
+    },
+    "createdAt": "2026-03-08T05:19:37.343Z",
+    "updatedAt": "2026-03-08T05:19:37.343Z"
+  },
+  "experience": [
+    {
+      "_id": "69ad070ea0e17a56a027858f",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "title": "Senior Software Engineering Manager",
+      "company": "Xpertsea",
+      "companyDescription": "Predictive shrimp biomass control with AI delivering sustainable aquaculture solutions",
+      "size": "51 - 100 employees",
+      "startDate": "2020-10-01T00:00:00.000Z",
+      "endDate": null,
+      "isCurrentJob": true,
+      "location": "Quebec, Canada",
+      "highlights": [
+        "Built self-service AI prototyping workflow, cutting PoC delivery time from 2 days to 4 hours.",
+        "Deployed AI tooling and training, boosting per-engineer productivity by 3x with maintained quality.",
+        "Led a 9-engineer team in the development and scaling of complex applications",
+        "Spearheaded a full-stack migration from AWS to Google Cloud, achieving a 20% reduction in infrastructure costs",
+        "Led platform re-architecture improving DX and UX, driving product-market fit",
+        "Introduced trunk-based development to the team, reducing Gitflow overhead and significantly improving feature lead time",
+        "Pioneered AI-powered 1:1 methodology creating searchable, data-driven records of discussions and goals",
+        "Re-architected CI/CD pipelines, cutting build/deploy time from 50 to 7 minutes",
+        "Increased feature delivery velocity by 5x, reducing lead time from 13 weeks to 2 weeks",
+        "Implemented Kanban, reducing planning time by 20% with continuous development flow",
+        "Designed engineering-product workflow reducing communication friction and meetings",
+        "Oversaw the successful launch of 6 major projects",
+        "Introduced engineering standards reducing bug rates by 23% and streamlining async communication",
+        "Managed all people functions, including performance reviews, mentorship, and conflict resolution",
+        "Contributed hands-on code to backend (Python, TS) and frontend (Next.js), accelerating key initiatives",
+        "Built cross-platform C++ Computer Vision framework for native iOS and Android"
+      ],
+      "createdAt": "2026-03-08T05:20:14.046Z",
+      "updatedAt": "2026-03-08T05:20:14.046Z"
+    },
+    {
+      "_id": "69ad070ea0e17a56a0278590",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "title": "Senior iOS Developer",
+      "company": "Social.mom",
+      "companyDescription": "Social Media for mothers focused on delivering a safe and supportive environment",
+      "size": "11 - 20 employees",
+      "startDate": "2019-10-01T00:00:00.000Z",
+      "endDate": "2020-10-01T00:00:00.000Z",
+      "isCurrentJob": false,
+      "location": "",
+      "highlights": [
+        "Engineered and maintained a high-traffic iOS application, driving the migration of key features from Objective-C to Swift",
+        "Led a major re-architecture of the native codebase, cutting maintenance overhead and new feature development time by 20%",
+        "Authored automation scripts that eliminated hundreds of hours of manual, repetitive tasks for the development team",
+        "Established a formal testing culture by introducing end-to-end (E2E) and unit testing, significantly improving application reliability",
+        "Mentored engineers on software design, promoting the adoption of SOLID principles and modern design patterns"
+      ],
+      "createdAt": "2026-03-08T05:20:14.046Z",
+      "updatedAt": "2026-03-08T05:20:14.046Z"
+    },
+    {
+      "_id": "69ad070ea0e17a56a0278591",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "title": "Senior Software Engineer",
+      "company": "Levio",
+      "companyDescription": "Tech Consulting",
+      "size": "1K - 5K employees",
+      "startDate": "2018-07-01T00:00:00.000Z",
+      "endDate": "2019-10-01T00:00:00.000Z",
+      "isCurrentJob": false,
+      "location": "",
+      "highlights": [
+        "Engineered and maintained scalable, high-availability backend services for multiple clients using .NET C#",
+        "Executed complex legacy modernization projects, successfully migrating critical client systems from COBOL to modern .NET platforms",
+        "Led a project to migrate customers from legacy version control systems to Git, modernizing their source code management practices",
+        "Acted as a key technical consultant, collaborating with cross-functional teams to define requirements and deliver robust solutions",
+        "Contributed to the optimization and automation of continuous integration (CI) pipelines to improve build and deployment efficiency"
+      ],
+      "createdAt": "2026-03-08T05:20:14.046Z",
+      "updatedAt": "2026-03-08T05:20:14.046Z"
+    },
+    {
+      "_id": "69ad070ea0e17a56a0278592",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "title": "Senior Mobile Engineer",
+      "company": "Concrete Solutions",
+      "companyDescription": "Tech Consulting",
+      "size": "10K+ employees",
+      "startDate": "2015-07-01T00:00:00.000Z",
+      "endDate": "2018-08-01T00:00:00.000Z",
+      "isCurrentJob": false,
+      "location": "",
+      "highlights": [
+        "Progressed from Developer to Senior Engineer, leading the architecture and development of native mobile applications for multiple clients",
+        "Developed 3 mobile banking applications and 4 e-commerce apps, delivering high-quality financial and retail solutions",
+        "Architected and developed a \"white-label\" e-commerce mobile platform, enabling the rapid deployment of customized storefronts from a single codebase",
+        "Delivered multiple technical talks to engineering teams on best practices in coding, testing, and QA implementation",
+        "Designed and implemented robust CI/CD pipelines (Jenkins, Bitrise, Travis CI) and promoted TDD/BDD practices (XCTest, Kif)"
+      ],
+      "createdAt": "2026-03-08T05:20:14.046Z",
+      "updatedAt": "2026-03-08T05:20:14.046Z"
+    },
+    {
+      "_id": "69ad070ea0e17a56a0278593",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "title": "Lead Game Programmer",
+      "company": "Editora Globo",
+      "companyDescription": "Publisher and developer of digital entertainment products",
+      "size": "500 - 1K employees",
+      "startDate": "2010-08-01T00:00:00.000Z",
+      "endDate": "2015-04-01T00:00:00.000Z",
+      "isCurrentJob": false,
+      "location": "",
+      "highlights": [
+        "Progressed from Programmer to Lead, managing full game development lifecycle and team leadership",
+        "Led the end-to-end development of cross-platform games (iOS, Android, Windows) using C# and Unity3D",
+        "Architected and built critical backend services for MMO games, including login systems and room controllers, using SmartFoxServer (Java/MySQL)",
+        "Designed and developed a reusable Unity3D framework and custom engine tools, significantly increasing team productivity",
+        "Implemented JIRA to manage development process"
+      ],
+      "createdAt": "2026-03-08T05:20:14.046Z",
+      "updatedAt": "2026-03-08T05:20:14.046Z"
+    },
+    {
+      "_id": "69ad070ea0e17a56a0278594",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "title": "Junior Analyst Programmer",
+      "company": "People Way",
+      "companyDescription": "Tech Consulting",
+      "size": "11 - 50 employees",
+      "startDate": "2009-04-01T00:00:00.000Z",
+      "endDate": "2010-02-01T00:00:00.000Z",
+      "isCurrentJob": false,
+      "location": "",
+      "highlights": [
+        "Developed and maintained enterprise web applications using the J2EE stack (JSP, JSF) and SOAP web services",
+        "Managed the client data lifecycle, including database design (MySQL) and building custom reports with JasperReport",
+        "Engineered data parsing scripts to process and manipulate diverse formats (SMS, XML, CSV)"
+      ],
+      "createdAt": "2026-03-08T05:20:14.046Z",
+      "updatedAt": "2026-03-08T05:20:14.046Z"
+    }
+  ],
+  "achievements": [
+    {
+      "_id": "69ad06f0824234ab331a9582",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "icon": "🔥",
+      "title": "AI-Powered Delivery",
+      "value": "3x",
+      "label": "Productivity & Speed",
+      "description": "PoC delivery: 2 days → 4 hours | 3x per-engineer productivity",
+      "color": "text-indigo-500",
+      "createdAt": "2026-03-08T05:19:44.696Z",
+      "updatedAt": "2026-03-08T05:19:44.696Z"
+    },
+    {
+      "_id": "69ad06f0824234ab331a9583",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "icon": "🚀",
+      "title": "Speed Master",
+      "value": "5x",
+      "label": "Feature Delivery Velocity",
+      "description": "Feature lead time: 13 weeks → 2 weeks",
+      "color": "text-mTeal",
+      "createdAt": "2026-03-08T05:19:44.696Z",
+      "updatedAt": "2026-03-08T05:19:44.696Z"
+    },
+    {
+      "_id": "69ad06f0824234ab331a9584",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "icon": "⚡",
+      "title": "Pipeline Wizard",
+      "value": "86%",
+      "label": "CI/CD Speed Improvement",
+      "description": "Build & deploy: 50min → 7min",
+      "createdAt": "2026-03-08T05:19:44.696Z",
+      "updatedAt": "2026-03-08T05:19:44.696Z"
+    },
+    {
+      "_id": "69ad06f0824234ab331a9585",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "icon": "🚢",
+      "title": "Shipping Machine",
+      "value": "30+",
+      "label": "Apps Launched to Production",
+      "description": "Mobile, web & games across platforms",
+      "createdAt": "2026-03-08T05:19:44.696Z",
+      "updatedAt": "2026-03-08T05:19:44.696Z"
+    },
+    {
+      "_id": "69ad06f0824234ab331a9586",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "icon": "💰",
+      "title": "Cost Optimizer",
+      "value": "20%",
+      "label": "Infrastructure Cost Cut",
+      "description": "Full cloud migration from AWS to GCP",
+      "createdAt": "2026-03-08T05:19:44.696Z",
+      "updatedAt": "2026-03-08T05:19:44.696Z"
+    },
+    {
+      "_id": "69ad06f0824234ab331a9587",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "icon": "💡",
+      "title": "Team Catalyst",
+      "value": "Multi-Year",
+      "label": "Technical Talks Delivered",
+      "description": "Best practices in coding, testing & QA",
+      "createdAt": "2026-03-08T05:19:44.696Z",
+      "updatedAt": "2026-03-08T05:19:44.696Z"
+    },
+    {
+      "_id": "69ad06f0824234ab331a9588",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "icon": "🏦",
+      "title": "FinTech Builder",
+      "value": "3",
+      "label": "Banking Apps Delivered",
+      "description": "High-security financial mobile solutions",
+      "createdAt": "2026-03-08T05:19:44.696Z",
+      "updatedAt": "2026-03-08T05:19:44.696Z"
+    },
+    {
+      "_id": "69ad06f0824234ab331a9589",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "icon": "🔄",
+      "title": "Legacy Slayer",
+      "value": "COBOL→.NET",
+      "label": "Modernization Expert",
+      "description": "Migrated critical legacy systems",
+      "createdAt": "2026-03-08T05:19:44.696Z",
+      "updatedAt": "2026-03-08T05:19:44.696Z"
+    }
+  ],
+  "projects": [
+    {
+      "_id": "69ad0702c78ae76ee9c0053d",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "name": "Kampi",
+      "shortDescription": "Intelligent copilot for shrimp farmers using AI and computer vision to replace manual guesswork with data-driven insights. Features three pillars: Pond Vision for biometric monitoring via smartphone photos, Optima for predictive analytics and growth forecasting, and FarmBook for team coordination across the production chain.",
+      "techStack": [
+        "Python",
+        "TypeScript/JS",
+        "MongoDB",
+        "MySQL",
+        "Node.js",
+        "Bun",
+        "Next.js",
+        "Google Cloud",
+        "Terraform",
+        "Ansible",
+        "C++",
+        "Android",
+        "iOS",
+        "React Native + Native Development"
+      ],
+      "company": "Xpertsea",
+      "role": "Senior Software Engineering Manager",
+      "startDate": "2021-10-01T00:00:00.000Z",
+      "endDate": null,
+      "isCurrentProject": false,
+      "link": "https://bekampi.com/",
+      "highlights": [
+        "Led cross-functional team in development of AI-powered platform with three product pillars",
+        "Architected technical strategy for predictive analytics and computer vision systems",
+        "Managed technical roadmap for omnichannel platform supporting iOS, iPadOS, and web",
+        "Directed infrastructure modernization using Google Cloud, Terraform, and Ansible"
+      ],
+      "createdAt": "2026-03-08T05:20:02.533Z",
+      "updatedAt": "2026-03-08T05:20:02.533Z"
+    },
+    {
+      "_id": "69ad0702c78ae76ee9c0053e",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "name": "Social.Mom",
+      "shortDescription": "Social network platform designed to counter social isolation during motherhood and reinforce the social safety net of families. Enables mothers to connect locally, plan activities, and access community groups and organizations in their area through a bilingual interface.",
+      "techStack": ["iOS native", "Android native", "Java Spring Boot", "React"],
+      "company": "Social.mom",
+      "role": "Senior Native iOS Developer",
+      "startDate": "2019-10-01T00:00:00.000Z",
+      "endDate": "2021-08-01T00:00:00.000Z",
+      "isCurrentProject": false,
+      "link": "https://social.mom/en",
+      "highlights": [
+        "Engineered and maintained high-traffic iOS application with bilingual support (English/French)",
+        "Led major re-architecture reducing maintenance overhead and new feature development time by 20%",
+        "Established formal testing culture with E2E and unit testing for improved application reliability"
+      ],
+      "createdAt": "2026-03-08T05:20:02.533Z",
+      "updatedAt": "2026-03-08T05:20:02.533Z"
+    },
+    {
+      "_id": "69ad0702c78ae76ee9c0053f",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "name": "Meu Carrefour",
+      "shortDescription": "All-in-one retail companion and cornerstone of Carrefour Brazil's omnichannel strategy, empowering millions of users to manage loyalty rewards, shop for groceries online, and streamline in-store visits through smart utility tools like barcode scanning and proximity services.",
+      "techStack": ["iOS native", "TypeScript", "Node.js", "Java"],
+      "company": "Carrefour Brazil",
+      "role": "Senior iOS Developer",
+      "startDate": "2016-02-01T00:00:00.000Z",
+      "endDate": "2017-06-01T00:00:00.000Z",
+      "isCurrentProject": false,
+      "highlights": [
+        "Developed comprehensive mobile shopping experience with barcode scanner and store locator",
+        "Implemented loyalty program integration with Purple Label discounts and cashback tracking",
+        "Built shopping list management system with cross-platform synchronization"
+      ],
+      "createdAt": "2026-03-08T05:20:02.533Z",
+      "updatedAt": "2026-03-08T05:20:02.533Z"
+    },
+    {
+      "_id": "69ad0702c78ae76ee9c00540",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "name": "Itaú Unibanco Mobile Banking",
+      "shortDescription": "Mobile banking application for one of Brazil's largest financial institutions, providing users with secure access to core banking services including account management and financial transactions.",
+      "techStack": ["Windows Phone", "iOS", ".NET"],
+      "company": "Itaú Unibanco",
+      "role": "Windows Phone and iOS Developer",
+      "startDate": "2015-07-01T00:00:00.000Z",
+      "endDate": "2016-02-01T00:00:00.000Z",
+      "isCurrentProject": false,
+      "highlights": [
+        "Implemented login with CPF for secure user authentication",
+        "Developed account statement functionality for transaction history access",
+        "Built transfers and payments features for core banking operations"
+      ],
+      "createdAt": "2026-03-08T05:20:02.534Z",
+      "updatedAt": "2026-03-08T05:20:02.534Z"
+    },
+    {
+      "_id": "69ad0702c78ae76ee9c00541",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "name": "Mundo do Sítio",
+      "shortDescription": "Persistent, multi-user virtual world designed to integrate pedagogical goals with immersive gameplay as a digital extension of the Sítio do Picapau Amarelo IP. Featured complex economy, social interactions, and library of educational mini-games for millions of Brazilian students.",
+      "techStack": ["Unity 3D", "Flash ActionScript (SWC)", "Java", "SmartFox Server", "HTML5/JS"],
+      "company": "Editora Globo",
+      "role": "Lead Game Programmer / Full Stack",
+      "startDate": "2010-08-01T00:00:00.000Z",
+      "endDate": "2015-04-01T00:00:00.000Z",
+      "isCurrentProject": false,
+      "highlights": [
+        "Engineered full-stack architecture handling high-concurrency traffic with low-latency communication",
+        "Developed interactive gameplay mechanics and real-time state synchronization for 30+ educational mini-games",
+        "Implemented secure authentication, profile registration, and parental control features for children's platform"
+      ],
+      "createdAt": "2026-03-08T05:20:02.534Z",
+      "updatedAt": "2026-03-08T05:20:02.534Z"
+    }
+  ],
+  "techSkills": [
+    {
+      "_id": "69ad0936824234ab331a9649",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "title": "AI Development Tools",
+      "skills": [
+        {
+          "name": "GitHub Copilot",
+          "experienceYears": 3
+        },
+        {
+          "name": "copilot-cli",
+          "experienceYears": 1
+        },
+        {
+          "name": "Claude Code",
+          "experienceYears": 1
+        },
+        {
+          "name": "OpenCode",
+          "experienceYears": 0.5
+        },
+        {
+          "name": "Codex",
+          "experienceYears": 0.5
+        },
+        {
+          "name": "Cursor",
+          "experienceYears": 2
+        },
+        {
+          "name": "Z.ai",
+          "experienceYears": 0.5
+        },
+        {
+          "name": "gemini-cli",
+          "experienceYears": 0.5
+        },
+        {
+          "name": "Gemini",
+          "experienceYears": 1
+        },
+        {
+          "name": "GLM-5",
+          "experienceYears": 0.5
+        },
+        {
+          "name": "Claude Opus 4",
+          "experienceYears": 1
+        }
+      ],
+      "createdAt": "2026-03-08T05:29:26.053Z",
+      "updatedAt": "2026-03-08T05:29:32.492Z"
+    },
+    {
+      "_id": "69ad0936824234ab331a964a",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "title": "Languages & Frameworks",
+      "skills": [
+        {
+          "name": "Python",
+          "experienceYears": 6
+        },
+        {
+          "name": "JavaScript/TypeScript",
+          "experienceYears": 10
+        },
+        {
+          "name": "Go",
+          "experienceYears": 2
+        },
+        {
+          "name": "C++",
+          "experienceYears": 5
+        },
+        {
+          "name": "C#",
+          "experienceYears": 7
+        },
+        {
+          "name": "Ruby",
+          "experienceYears": 2
+        },
+        {
+          "name": "Swift",
+          "experienceYears": 5
+        },
+        {
+          "name": "Objective-C",
+          "experienceYears": 4
+        },
+        {
+          "name": "Node.js",
+          "experienceYears": 8
+        },
+        {
+          "name": "Next.js",
+          "experienceYears": 4
+        },
+        {
+          "name": "React Native",
+          "experienceYears": 3
+        },
+        {
+          "name": "Native iOS/Android Development",
+          "experienceYears": 8
+        }
+      ],
+      "createdAt": "2026-03-08T05:29:26.053Z",
+      "updatedAt": "2026-03-08T05:29:32.492Z"
+    },
+    {
+      "_id": "69ad0936824234ab331a964b",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "title": "Architecture & APIs",
+      "skills": [
+        {
+          "name": "GraphQL",
+          "experienceYears": 4
+        },
+        {
+          "name": "RESTful APIs",
+          "experienceYears": 12
+        },
+        {
+          "name": "Microservices Architecture",
+          "experienceYears": 6
+        },
+        {
+          "name": "Event-Driven Systems",
+          "experienceYears": 4
+        },
+        {
+          "name": "Design Patterns",
+          "experienceYears": 10
+        },
+        {
+          "name": "SOLID Principles",
+          "experienceYears": 10
+        }
+      ],
+      "createdAt": "2026-03-08T05:29:26.053Z",
+      "updatedAt": "2026-03-08T05:29:32.492Z"
+    },
+    {
+      "_id": "69ad0936824234ab331a964c",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "title": "DevOps & Infrastructure",
+      "skills": [
+        {
+          "name": "Docker",
+          "experienceYears": 6
+        },
+        {
+          "name": "Kubernetes",
+          "experienceYears": 3
+        },
+        {
+          "name": "CI/CD Pipelines",
+          "experienceYears": 8
+        },
+        {
+          "name": "Jenkins",
+          "experienceYears": 5
+        },
+        {
+          "name": "GitHub Actions",
+          "experienceYears": 4
+        }
+      ],
+      "createdAt": "2026-03-08T05:29:26.053Z",
+      "updatedAt": "2026-03-08T05:29:32.492Z"
+    },
+    {
+      "_id": "69ad0936824234ab331a964d",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "title": "Databases",
+      "skills": [
+        {
+          "name": "MySQL",
+          "experienceYears": 10
+        },
+        {
+          "name": "PostgreSQL",
+          "experienceYears": 5
+        },
+        {
+          "name": "MongoDB",
+          "experienceYears": 6
+        },
+        {
+          "name": "Redis",
+          "experienceYears": 4
+        }
+      ],
+      "createdAt": "2026-03-08T05:29:26.053Z",
+      "updatedAt": "2026-03-08T05:29:32.492Z"
+    },
+    {
+      "_id": "69ad0936824234ab331a964e",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "title": "Development Practices",
+      "skills": [
+        {
+          "name": "TDD/BDD",
+          "experienceYears": 8
+        },
+        {
+          "name": "Unit Testing",
+          "experienceYears": 10
+        },
+        {
+          "name": "Integration Testing",
+          "experienceYears": 8
+        },
+        {
+          "name": "E2E Testing",
+          "experienceYears": 6
+        },
+        {
+          "name": "Automation",
+          "experienceYears": 8
+        },
+        {
+          "name": "Agile/Scrum/Kanban",
+          "experienceYears": 10
+        }
+      ],
+      "createdAt": "2026-03-08T05:29:26.053Z",
+      "updatedAt": "2026-03-08T05:29:32.492Z"
+    }
+  ],
+  "managementSkills": [
+    {
+      "_id": "69ad0a3a824234ab331a9695",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "description": "Expert in Scrum and Kanban methodologies, fostering collaborative and high-performing teams",
+      "createdAt": "2026-03-08T05:33:46.374Z",
+      "updatedAt": "2026-03-08T05:33:46.374Z"
+    },
+    {
+      "_id": "69ad0a3a824234ab331a9696",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "description": "Proven track record of mentoring engineers, leading technical teams, and developing talent from junior to senior levels",
+      "createdAt": "2026-03-08T05:33:46.374Z",
+      "updatedAt": "2026-03-08T05:33:46.374Z"
+    },
+    {
+      "_id": "69ad0a3a824234ab331a9697",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "description": "Experienced in collaborating with product managers, designers, and cross-functional teams to deliver robust solutions",
+      "createdAt": "2026-03-08T05:33:46.374Z",
+      "updatedAt": "2026-03-08T05:33:46.374Z"
+    },
+    {
+      "_id": "69ad0a3a824234ab331a9698",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "description": "Led client engagements and delivered solutions across multiple organizations as a technical consultant",
+      "createdAt": "2026-03-08T05:33:46.374Z",
+      "updatedAt": "2026-03-08T05:33:46.374Z"
+    },
+    {
+      "_id": "69ad0a3a824234ab331a9699",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "description": "Successfully managed complex migration projects, full game development lifecycles, and multi-client deliverables",
+      "createdAt": "2026-03-08T05:33:46.374Z",
+      "updatedAt": "2026-03-08T05:33:46.374Z"
+    },
+    {
+      "_id": "69ad0a3a824234ab331a969a",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "description": "Established development processes using JIRA/GitHub Projects, implemented CI/CD pipelines, and promoted TDD/BDD practices",
+      "createdAt": "2026-03-08T05:33:46.374Z",
+      "updatedAt": "2026-03-08T05:33:46.374Z"
+    },
+    {
+      "_id": "69ad0a3a824234ab331a969b",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "description": "Skilled in managing client relationships, defining requirements, and aligning technical solutions with business objectives",
+      "createdAt": "2026-03-08T05:33:46.374Z",
+      "updatedAt": "2026-03-08T05:33:46.374Z"
+    },
+    {
+      "_id": "69ad0a3a824234ab331a969c",
+      "userId": "69aa3ae146d8807e7f4071ee",
+      "description": "Delivered technical talks and presentations to engineering teams on best practices in coding, testing, and QA implementation",
+      "createdAt": "2026-03-08T05:33:46.374Z",
+      "updatedAt": "2026-03-08T05:33:46.374Z"
+    }
+  ]
+}

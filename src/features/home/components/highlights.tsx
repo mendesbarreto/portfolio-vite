@@ -1,3 +1,6 @@
+import { useProfileStore } from '@/stores/profileStore';
+import { HighlightsSkeleton } from './highlights-skeleton';
+
 export function Card({
   icon,
   title,
@@ -26,66 +29,13 @@ export function Card({
 }
 
 export function Highlights() {
-  const achievements = [
-    {
-      icon: '🔥',
-      title: 'AI-Powered Delivery',
-      value: '3x',
-      label: 'Productivity & Speed',
-      description: 'PoC delivery: 2 days → 4 hours | 3x per-engineer productivity',
-      color: 'text-indigo-500',
-    },
-    {
-      icon: '🚀',
-      title: 'Speed Master',
-      value: '5x',
-      label: 'Feature Delivery Velocity',
-      description: 'Feature lead time: 13 weeks → 2 weeks',
-      color: 'text-mTeal',
-    },
-    {
-      icon: '⚡',
-      title: 'Pipeline Wizard',
-      value: '86%',
-      label: 'CI/CD Speed Improvement',
-      description: 'Build & deploy: 50min → 7min',
-    },
-    {
-      icon: '🚢',
-      title: 'Shipping Machine',
-      value: '30+',
-      label: 'Apps Launched to Production',
-      description: 'Mobile, web & games across platforms',
-    },
-    {
-      icon: '💰',
-      title: 'Cost Optimizer',
-      value: '20%',
-      label: 'Infrastructure Cost Cut',
-      description: 'Full cloud migration from AWS to GCP',
-    },
-    {
-      icon: '💡',
-      title: 'Team Catalyst',
-      value: 'Multi-Year',
-      label: 'Technical Talks Delivered',
-      description: 'Best practices in coding, testing & QA',
-    },
-    {
-      icon: '🏦',
-      title: 'FinTech Builder',
-      value: '3',
-      label: 'Banking Apps Delivered',
-      description: 'High-security financial mobile solutions',
-    },
-    {
-      icon: '🔄',
-      title: 'Legacy Slayer',
-      value: 'COBOL→.NET',
-      label: 'Modernization Expert',
-      description: 'Migrated critical legacy systems',
-    },
-  ];
+  const userData = useProfileStore((state) => state.profileData);
+  const isLoading = useProfileStore((state) => state.isLoading);
+  const achievements = userData?.achievements ?? [];
+
+  if (isLoading) {
+    return <HighlightsSkeleton />;
+  }
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">

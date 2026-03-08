@@ -1,21 +1,21 @@
+import { useProfileStore } from '@/stores/profileStore';
 import { SectionAbout } from './section-about';
+import { ManagementSkillsSkeleton } from './management-skills-skeleton';
 
 export function ManagementSkills({ className = '' }: { className?: string }) {
-  const skills = [
-    'Expert in Scrum and Kanban methodologies, fostering collaborative and high-performing teams',
-    'Proven track record of mentoring engineers, leading technical teams, and developing talent from junior to senior levels',
-    'Experienced in collaborating with product managers, designers, and cross-functional teams to deliver robust solutions',
-    'Led client engagements and delivered solutions across multiple organizations as a technical consultant',
-    'Successfully managed complex migration projects, full game development lifecycles, and multi-client deliverables',
-    'Established development processes using JIRA/GitHub Projects, implemented CI/CD pipelines, and promoted TDD/BDD practices',
-    'Skilled in managing client relationships, defining requirements, and aligning technical solutions with business objectives',
-    'Delivered technical talks and presentations to engineering teams on best practices in coding, testing, and QA implementation',
-  ];
+  const userData = useProfileStore((state) => state.profileData);
+  const isLoading = useProfileStore((state) => state.isLoading);
+  const managementSkills = userData?.managementSkills || [];
+
+  if (isLoading) {
+    <ManagementSkillsSkeleton />;
+  }
+
   return (
     <div className={`flex flex-col gap-4 w-full ${className}`}>
       <SectionAbout title="Management Skills" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {skills.map((skill, index) => {
+        {managementSkills.map((skill, index) => {
           const id = `skill-${index}`;
           return (
             <div
@@ -36,7 +36,7 @@ export function ManagementSkills({ className = '' }: { className?: string }) {
             >
               <div key={id} className="flex text-mGray p-2 leading-relaxed">
                 <span className="text-mTeal mr-3 mt-1">{'▹'}</span>
-                {skill}
+                {skill.description}
               </div>
             </div>
           );

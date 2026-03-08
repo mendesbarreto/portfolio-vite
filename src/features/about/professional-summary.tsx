@@ -1,22 +1,32 @@
+import ReactMarkdown from 'react-markdown';
 import { SectionAbout } from './section-about';
+import { useProfileStore } from '@/stores/profileStore';
+import { ProfessionalSummarySkeleton } from './professional-summary-skeleton';
 
 export function ProfessionalSummary({ className = '' }: { className?: string }) {
+  const userData = useProfileStore((state) => state.profileData);
+  const isLoading = useProfileStore((state) => state.isLoading);
+  const { profile } = userData?.user ?? {};
+
+  if (isLoading) {
+    return <ProfessionalSummarySkeleton />;
+  }
+
   return (
     <div className={`flex flex-col gap-4 ${className}`}>
       <SectionAbout title="Professional Summary" />
       <div className="border text-lg border-mTeal/10 rounded-xl bg-background p-4 leading-relaxed">
-        <div className="text-mGray">
-          With <span className="text-mTeal font-bold">14+ years</span> in software engineering, I've
-          worked across the full stack, leading and mentoring teams that ship quality products. My
-          focus is on delivering what clients actually need by collaborating closely with product
-          and design and ruthlessly trimming down processes. This means practical agile, a strong
-          focus on automation, and a culture of high quality. I stay hands-on by architecting
-          systems, managing migrations, and consulting. This keeps my skills sharp and helps me
-          understand my team's challenges.
-        </div>
+        <ReactMarkdown
+          components={{
+            strong: ({ children }) => <span className="text-mTeal font-bold">{children}</span>,
+            p: ({ children }) => <p className="text-mGray leading-relaxed">{children}</p>,
+          }}
+        >
+          {profile?.bio}
+        </ReactMarkdown>
         <div className="text-mGray pt-8 leading-relaxed">
-          <span className="text-mTeal font-bold">My goal is simple:</span> build high-performing
-          teams and scalable solutions that actually work.
+          <span className="text-mTeal font-bold">My goal is simple:</span>
+          {profile?.goal}
         </div>
       </div>
     </div>

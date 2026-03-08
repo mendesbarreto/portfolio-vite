@@ -2,26 +2,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faShare } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
+import { useProfileStore } from '@/stores/profileStore';
 
 export function SocialMediaButtons() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const userData = useProfileStore((state) => state.profileData);
+
+  const linkedInUrl = userData?.user.profile?.linkedInUrl || '-';
+  const githubUrl = userData?.user.profile?.githubUrl || '-';
+  const twitterUrl = userData?.user.profile?.twitterUrl || '-';
+  const facebookUrl = userData?.user.profile?.linkedInUrl || '-';
+
   const socialLinks = [
     {
       icon: faGithub,
-      href: 'https://github.com/mendesbarreto',
+      href: githubUrl,
     },
     {
       icon: faLinkedin,
-      href: 'https://www.linkedin.com/in/mendesbarreto/',
+      href: linkedInUrl,
     },
     {
       icon: faTwitter,
-      href: 'https://x.com/DougTheDev',
+      href: twitterUrl,
     },
     {
       icon: faFacebook,
-      href: 'https://www.facebook.com/douglasMendesBarreto',
+      href: facebookUrl,
     },
   ];
 

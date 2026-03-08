@@ -1,77 +1,21 @@
+import { useProfileStore } from '@/stores/profileStore';
 import { SectionAbout } from './section-about';
+import { TechSkillsSkeleton } from './tech-skills-skeleton';
 
 export function TechSkills({ className = '' }: { className?: string }) {
-  const techSkillsData = [
-    {
-      title: 'AI Development Tools',
-      skills: [
-        'GitHub Copilot',
-        'copilot-cli',
-        'Claude Code',
-        'OpenCode',
-        'Codex',
-        'Cursor',
-        'Z.ai',
-        'gemini-cli',
-        'Gemini',
-        'GLM-5',
-        'Claude Opus 4',
-      ],
-    },
-    {
-      title: 'Languages & Frameworks',
-      skills: [
-        'Python',
-        'JavaScript/TypeScript',
-        'Go',
-        'C++',
-        'C#',
-        'Ruby',
-        'Swift',
-        'Objective-C',
-        'Node.js',
-        'Next.js',
-        'React Native',
-        'Native iOS/Android Development',
-      ],
-    },
-    {
-      title: 'Architecture & APIs',
-      skills: [
-        'GraphQL',
-        'RESTful APIs',
-        'Microservices Architecture',
-        'Event-Driven Systems',
-        'Design Patterns',
-        'SOLID Principles',
-      ],
-    },
-    {
-      title: 'DevOps & Infrastructure',
-      skills: ['Docker', 'Kubernetes', 'CI/CD Pipelines', 'Jenkins', 'GitHub Actions'],
-    },
-    {
-      title: 'Databases',
-      skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis'],
-    },
-    {
-      title: 'Development Practices',
-      skills: [
-        'TDD/BDD',
-        'Unit Testing',
-        'Integration Testing',
-        'E2E Testing',
-        'Automation',
-        'Agile/Scrum/Kanban',
-      ],
-    },
-  ];
+  const userData = useProfileStore((state) => state.profileData);
+  const isLoading = useProfileStore((state) => state.isLoading);
+  const techSkills = userData?.techSkills || [];
+
+  if (isLoading) {
+    return <TechSkillsSkeleton />;
+  }
 
   return (
     <section className={`flex flex-col gap-4 w-full ${className}`}>
       <SectionAbout title="Tech Skills" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {techSkillsData.map((item, index) => {
+        {techSkills.map((item, index) => {
           const id = `skill-${index}`;
           return (
             <div
@@ -101,7 +45,7 @@ export function TechSkills({ className = '' }: { className?: string }) {
                         key={id}
                         className="bg-background border border-mTeal/30 font-normal rounded-sm p-1.5 text-mGray text-lg"
                       >
-                        {skill}
+                        {skill.name}
                       </span>
                     );
                   })}

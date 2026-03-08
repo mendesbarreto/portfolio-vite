@@ -1,29 +1,41 @@
 import profileImage from '/img-profile.png';
+import { useProfileStore } from '@/stores/profileStore';
+import { LoadingSkeleton } from '@/components/common/loading-skeleton';
+import ReactMarkdown from 'react-markdown';
 
 export function HomeSummary() {
+  const userData = useProfileStore((state) => state.profileData);
+  const isLoading = useProfileStore((state) => state.isLoading);
+
+  const { profile } = userData?.user ?? {};
+
   return (
     <div className="flex flex-col md:flex-row justify-between items-center gap-8 p-4 md:px-0">
       <div className="md:w-1/2 text-left  w-full">
         {' '}
-        <div className="w-full md:text-2xl font-bold text-white">
-          <span>I'm a </span>
-          <span className="text-mTeal">Senior Software Engineering Manager</span>
-        </div>
-        <div className="text-mGray pt-8 leading-relaxed">
-          With <span className="text-mTeal font-bold">14+ years</span> in software engineering, I've
-          worked across the full stack, leading and mentoring teams that ship quality products. My
-          focus is on delivering what clients actually need by collaborating closely with product
-          and design, leveraging{' '}
-          <span className="text-mTeal font-bold">AI-augmented workflows</span>, and ruthlessly
-          trimming down processes. This means practical agile, automation, and a culture of high
-          quality. I stay hands-on by architecting systems, managing migrations, and implementing{' '}
-          <span className="text-mTeal font-bold">AI tools</span> that multiply team productivity.
-          This keeps my skills sharp and helps me understand my team's challenges.{' '}
-        </div>
-        <div className="text-mGray pt-8 leading-relaxed">
-          <span className="text-mTeal font-bold">My goal is simple:</span> build high-performing
-          teams and scalable solutions that actually work, enhanced by strategic AI adoption.
-        </div>
+        {isLoading && <LoadingSkeleton />}
+        {userData && (
+          <div className="w-full md:text-2xl mb-6 font-bold text-white">
+            <span>I'm a </span>
+            <span className="text-mTeal">{profile?.currentRole}</span>
+          </div>
+        )}
+        {userData && (
+          <ReactMarkdown
+            components={{
+              strong: ({ children }) => <span className="text-mTeal font-bold">{children}</span>,
+              p: ({ children }) => <p className="text-mGray leading-relaxed">{children}</p>,
+            }}
+          >
+            {profile?.bio}
+          </ReactMarkdown>
+        )}
+        {userData && (
+          <div className="text-mGray pt-8 leading-relaxed">
+            <span className="text-mTeal font-bold">My goal is simple: </span>
+            {profile?.goal}
+          </div>
+        )}
       </div>
       <div>
         <div className="w-full md:w-117 max-w-117 mb-12">

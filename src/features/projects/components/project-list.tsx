@@ -1,15 +1,8 @@
+import { useProfileStore } from '@/stores/profileStore';
 import { useState } from 'react';
-
-interface Project {
-  name: string;
-  shortDescription: string;
-  techStack: string[];
-  company: string;
-  role: string;
-  timePeriod?: string;
-  link?: string;
-  highlights: string[];
-}
+import { ProjectListSkeleton } from './project-list-skeleton';
+import { DateTime } from 'luxon';
+import type { UserProject } from 'module-personal-profile-react-sdk';
 
 export function ProjectCard({
   index,
@@ -18,10 +11,15 @@ export function ProjectCard({
   onToggle,
 }: {
   index: number;
-  project: Project;
+  project: UserProject;
   isUncollapse: boolean;
   onToggle?: (index: number) => void;
 }) {
+  const startDateFormatted = DateTime.fromISO(project.startDate).toFormat('LLL yyyy');
+  const endDateFormatted = project.endDate
+    ? DateTime.fromISO(project.endDate).toFormat('LLL yyyy')
+    : 'Present';
+
   return (
     <div
       className={`rounded-lg hover:bg-background my-4 border ${!isUncollapse ? 'bg-background-light border-m-gray/20 hover:border-mTeal' : 'border-mTeal bg-background hover:border-mTeal/80'}`}
@@ -61,7 +59,9 @@ export function ProjectCard({
             </div>
             {/* Project Dates*/}
             <p className="mt-2 text-sm">
-              <span className="text-mTeal">{project.timePeriod}</span>
+              <span className="text-mTeal">{startDateFormatted}</span>
+              <span className="text-mTeal">{' – '}</span>
+              <span className="text-mTeal">{endDateFormatted}</span>
             </p>
           </div>
           {/* Project Arrow*/}
@@ -97,96 +97,13 @@ export interface ProjectsProps {
 export function ProjectList({ className }: ProjectsProps) {
   const [expandedProject, setExpandedProject] = useState<number | null>(null);
 
-  const projects: Project[] = [
-    {
-      name: 'Kampi',
-      shortDescription:
-        'Intelligent copilot for shrimp farmers using AI and computer vision to replace manual guesswork with data-driven insights. Features three pillars: Pond Vision for biometric monitoring via smartphone photos, Optima for predictive analytics and growth forecasting, and FarmBook for team coordination across the production chain.',
-      techStack: [
-        'Python',
-        'TypeScript/JS',
-        'MongoDB',
-        'MySQL',
-        'Node.js',
-        'Bun',
-        'Next.js',
-        'Google Cloud',
-        'Terraform',
-        'Ansible',
-        'C++',
-        'Android',
-        'iOS',
-        'React Native + Native Development',
-      ],
-      company: 'Xpertsea',
-      role: 'Senior Software Engineering Manager',
-      timePeriod: 'Oct 2021 – Present',
-      link: 'https://bekampi.com/',
-      highlights: [
-        'Led cross-functional team in development of AI-powered platform with three product pillars',
-        'Architected technical strategy for predictive analytics and computer vision systems',
-        'Managed technical roadmap for omnichannel platform supporting iOS, iPadOS, and web',
-        'Directed infrastructure modernization using Google Cloud, Terraform, and Ansible',
-      ],
-    },
-    {
-      name: 'Social.Mom',
-      shortDescription:
-        'Social network platform designed to counter social isolation during motherhood and reinforce the social safety net of families. Enables mothers to connect locally, plan activities, and access community groups and organizations in their area through a bilingual interface.',
-      techStack: ['iOS native', 'Android native', 'Java Spring Boot', 'React'],
-      company: 'Social.mom',
-      role: 'Senior Native iOS Developer',
-      timePeriod: 'Oct 2019 – Aug 2021',
-      link: 'https://social.mom/en',
-      highlights: [
-        'Engineered and maintained high-traffic iOS application with bilingual support (English/French)',
-        'Led major re-architecture reducing maintenance overhead and new feature development time by 20%',
-        'Established formal testing culture with E2E and unit testing for improved application reliability',
-      ],
-    },
-    {
-      name: 'Meu Carrefour',
-      shortDescription:
-        "All-in-one retail companion and cornerstone of Carrefour Brazil's omnichannel strategy, empowering millions of users to manage loyalty rewards, shop for groceries online, and streamline in-store visits through smart utility tools like barcode scanning and proximity services.",
-      techStack: ['iOS native', 'TypeScript', 'Node.js', 'Java'],
-      company: 'Carrefour Brazil',
-      role: 'Senior iOS Developer',
-      timePeriod: 'Feb 2016 – Jun 2016',
-      highlights: [
-        'Developed comprehensive mobile shopping experience with barcode scanner and store locator',
-        'Implemented loyalty program integration with Purple Label discounts and cashback tracking',
-        'Built shopping list management system with cross-platform synchronization',
-      ],
-    },
-    {
-      name: 'Itaú Unibanco Mobile Banking',
-      shortDescription:
-        "Mobile banking application for one of Brazil's largest financial institutions, providing users with secure access to core banking services including account management and financial transactions.",
-      techStack: ['Windows Phone', 'iOS', '.NET'],
-      company: 'Itaú Unibanco',
-      role: 'Windows Phone and iOS Developer',
-      timePeriod: 'July 2015 – Jan 2016',
-      highlights: [
-        'Implemented login with CPF for secure user authentication',
-        'Developed account statement functionality for transaction history access',
-        'Built transfers and payments features for core banking operations',
-      ],
-    },
-    {
-      name: 'Mundo do Sítio',
-      shortDescription:
-        'Persistent, multi-user virtual world designed to integrate pedagogical goals with immersive gameplay as a digital extension of the Sítio do Picapau Amarelo IP. Featured complex economy, social interactions, and library of educational mini-games for millions of Brazilian students.',
-      techStack: ['Unity 3D', 'Flash ActionScript (SWC)', 'Java', 'SmartFox Server', 'HTML5/JS'],
-      company: 'Editora Globo',
-      role: 'Lead Game Programmer / Full Stack',
-      timePeriod: 'Aug 2010 – Apr 2015',
-      highlights: [
-        'Engineered full-stack architecture handling high-concurrency traffic with low-latency communication',
-        'Developed interactive gameplay mechanics and real-time state synchronization for 30+ educational mini-games',
-        "Implemented secure authentication, profile registration, and parental control features for children's platform",
-      ],
-    },
-  ];
+  const userData = useProfileStore((state) => state.profileData);
+  const isLoading = useProfileStore((state) => state.isLoading);
+  const projects = userData?.projects ?? [];
+
+  if (isLoading) {
+    return <ProjectListSkeleton />;
+  }
 
   return (
     <section className={`${className}`}>
