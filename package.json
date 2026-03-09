@@ -25,7 +25,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.562.0",
     "luxon": "^3.7.2",
-    "module-personal-profile-react-sdk": "file:../module-personal-profile/sdk/packages/react/module-personal-profile-react-sdk-1.0.0-20260308012036.tgz",
+    "module-personal-profile-react-sdk": "ssh://git@github.com:mendesbarreto/module-personal-profile-react-sdk#master-26-03-08-23-55-17-64e0307",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-loading-skeleton": "^3.5.0",

@@ -16,7 +16,7 @@
         "clsx": "^2.1.1",
         "lucide-react": "^0.562.0",
         "luxon": "^3.7.2",
-        "module-personal-profile-react-sdk": "file:../module-personal-profile/sdk/packages/react/module-personal-profile-react-sdk-1.0.0-20260308012036.tgz",
+        "module-personal-profile-react-sdk": "ssh://git@github.com:mendesbarreto/module-personal-profile-react-sdk#master-26-03-08-23-55-17-64e0307",
         "react": "^19.2.0",
         "react-dom": "^19.2.0",
         "react-loading-skeleton": "^3.5.0",
@@ -874,7 +874,7 @@
 
     "minimist": ["minimist@1.2.8", "", {}, "sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA=="],
 
-    "module-personal-profile-react-sdk": ["module-personal-profile-react-sdk@../module-personal-profile/sdk/packages/react/module-personal-profile-react-sdk-1.0.0-20260308012036.tgz", { "peerDependencies": { "@tanstack/react-query": "^5.x", "axios": "^1.0.0", "react": ">=18", "react-dom": ">=18" } }],
+    "module-personal-profile-react-sdk": ["module-personal-profile-react-sdk@git+ssh://git@github.com:mendesbarreto/module-personal-profile-react-sdk#76ef0ee226c39dfb3b675c98fe1224f85fc2da34", { "peerDependencies": { "@tanstack/react-query": "^5.x", "axios": "^1.0.0", "react": ">=18", "react-dom": ">=18" } }, "76ef0ee226c39dfb3b675c98fe1224f85fc2da34"],
 
     "ms": ["ms@2.1.3", "", {}, "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="],
 
