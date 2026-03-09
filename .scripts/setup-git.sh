@@ -7,8 +7,11 @@ if [ "$CI" = "true" ] && [ -n "$GITHUB_TOKEN" ]; then
   echo "✅ CI environment detected"
   echo "🔧 Configuring git to use HTTPS with token instead of SSH..."
   git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.com/".insteadOf "ssh://git@github.com/"
+  git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.com/".insteadOf "ssh://git@github.com:"
   git config --global url."https://${GITHUB_TOKEN}:x-oauth-basic@github.com/".insteadOf "git@github.com:"
   echo "✅ Git configuration applied"
+  echo "🔍 Verifying git config..."
+  git config --global --get-regexp url
 else
   echo "ℹ️  Not in CI environment or GITHUB_TOKEN not set, skipping git config"
 fi
