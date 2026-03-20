@@ -22,12 +22,10 @@ export function useProfileData() {
     }
 
     const timeoutId = window.setTimeout(() => {
-      console.warn(
-        'Fetching profile data timed out after 20 seconds. Using fallback profile data.',
-      );
+      console.warn('Fetching profile data timed out after 5 seconds. Using fallback profile data.');
       setProfileData(profileFallbackData);
       setLoading(false);
-    }, 20_000);
+    }, 5_000);
 
     return () => {
       window.clearTimeout(timeoutId);
