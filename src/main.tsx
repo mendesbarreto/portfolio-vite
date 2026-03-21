@@ -12,7 +12,7 @@ if (!isLocalhost) {
   mixpanel.init('d0d89609d7c6db05b69ee7d96c6df250', {
     autocapture: true,
     track_pageview: true,
-    record_sessions_percent: 100, //records 100% of all sessions
+    record_sessions_percent: 100,
     record_heatmap_data: true,
   });
 }
