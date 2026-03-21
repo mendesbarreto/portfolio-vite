@@ -25,6 +25,7 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.562.0",
     "luxon": "^3.7.2",
+    "mixpanel-browser": "^2.76.0",
     "module-personal-profile-react-sdk": "ssh://git@github.com:mendesbarreto/module-personal-profile-react-sdk#master-26-03-08-23-55-17-64e0307",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
